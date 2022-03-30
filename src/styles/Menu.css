@@ -1,0 +1,9 @@
+.menu-line {
+    width: 200px;
+    height: 5px;
+    background-color: white;
+}
+.menu {
+    margin-top: -100px;
+    text-align: center;
+}

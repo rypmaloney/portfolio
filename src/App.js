@@ -1,13 +1,21 @@
 import './App.css';
+import Bio from './components/Bio';
+import Menu from './components/Menu';
+import Blogs from './components/Blogs';
+import { useState } from 'react';
+import Projects from './components/Projects';
 
-function App() {
+const App = () => {
+    const [menuSelect, setMenuSelect] = useState('projects');
+
     return (
         <div className='App'>
-            <header>
-                <h1>Ryan Maloney's Portfolio</h1>
-            </header>
+            <Bio />
+            <Menu />
+            <Blogs />
+            <Projects />
         </div>
     );
-}
+};
 
 export default App;
