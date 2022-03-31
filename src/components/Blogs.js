@@ -21,7 +21,7 @@ const Blogs = () => {
     };
 
     useEffect(() => {
-        //getPosts();
+        getPosts();
     }, []);
 
     return (
