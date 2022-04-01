@@ -1,4 +1,4 @@
-.bio {
+.header {
     width: 100vw;
     height: 100vh;
     color: white;
@@ -8,6 +8,19 @@
     justify-content: center;
 }
 
+.bio {
+    max-width: 800px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    padding: 25px;
+}
 .headshot {
     background-color: white;
     width: 150px;

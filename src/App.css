@@ -27,3 +27,13 @@ h1 {
 a {
     color: #e57a44;
 }
+
+.projects {
+    width: 100vw;
+    height: 200vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

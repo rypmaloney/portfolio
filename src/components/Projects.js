@@ -2,7 +2,7 @@ import '../styles/Bio.css';
 
 const Projects = () => {
     return (
-        <div className=''>
+        <div className='projects'>
             <header>
                 <h1>Projects</h1>
             </header>
