@@ -1,4 +1,5 @@
 import '../styles/Bio.css';
+import Menu from './Menu';
 
 const Bio = () => {
     return (

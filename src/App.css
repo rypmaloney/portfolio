@@ -4,7 +4,6 @@ body {
 }
 
 .App {
-    padding: 15px;
 }
 
 p {
@@ -28,12 +27,49 @@ a {
     color: #e57a44;
 }
 
+/* PROJECTS */
 .projects {
-    width: 100vw;
-    height: 200vh;
-    color: white;
+}
+
+/* MENU */
+.menu {
+    text-align: center;
+}
+
+.menu hr {
+    max-width: 500px;
+    border: 1px solid rgba(240, 248, 255, 0.24);
+    background-color: rgba(240, 248, 255, 0.158);
+}
+.menu ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+.menu ul li {
+    margin: auto;
+}
+
+.menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+.menu a:hover {
+    background-color: rgb(77, 69, 58);
+    cursor: pointer;
+}
+
+.menu a:focus {
+    background-color: black;
+}
+/* Content */
+.content {
+    width: 100%;
+    min-height: 100vh;
 }
