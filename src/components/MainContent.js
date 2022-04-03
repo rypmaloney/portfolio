@@ -1,5 +1,6 @@
 import Blogs from './Blogs';
 import Projects from './Projects';
+import Experience from './Experience';
 
 const MainContent = (props) => {
     if (props.selectedContent === 'projects') {
@@ -17,7 +18,7 @@ const MainContent = (props) => {
     } else {
         return (
             <div className='content'>
-                <Projects />
+                <Experience />
             </div>
         );
     }

@@ -6,12 +6,15 @@ import { useState } from 'react';
 import Projects from './components/Projects';
 
 const App = () => {
-    const [selectedContent, setSelectedContent] = useState('projects');
+    const [selectedContent, setSelectedContent] = useState('');
 
     return (
         <div className='App'>
             <Bio />
-            <Menu setSelectedContent={setSelectedContent} />
+            <Menu
+                setSelectedContent={setSelectedContent}
+                selectedContent={selectedContent}
+            />
             <MainContent selectedContent={selectedContent} />
         </div>
     );

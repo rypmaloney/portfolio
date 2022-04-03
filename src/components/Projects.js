@@ -1,10 +1,10 @@
-import '../styles/Bio.css';
+//import '../styles/Projets.css';
 
 const Projects = () => {
     return (
         <div className='projects'>
             <header>
-                <h1>Projects</h1>
+                <h2>Projects</h2>
             </header>
         </div>
     );

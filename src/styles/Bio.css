@@ -25,8 +25,9 @@
 .title {
     padding: 25px;
 }
-.headshot {
-    background-color: white;
+.headshot img {
+    border-radius: 2px;
+    box-shadow: 2px 5px 15px rgba(32, 32, 63, 0.685);
     width: 150px;
     height: 150px;
 }

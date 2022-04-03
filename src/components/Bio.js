@@ -1,12 +1,15 @@
 import '../styles/Bio.css';
 import Menu from './Menu';
+import me from '../images/me.jpeg';
 
 const Bio = () => {
     return (
         <div className='header'>
             <div className='bio'>
                 <div className='title-wrapper'>
-                    <div className='headshot'></div>
+                    <div className='headshot'>
+                        <img src={me}></img>
+                    </div>
                     <div className='title'>
                         <h1>Ryan Maloney</h1>
                         <h2>Web Developer</h2>

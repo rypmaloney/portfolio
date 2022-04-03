@@ -1,7 +1,7 @@
 import '../styles/Menu.css';
 
 const Menu = (props) => {
-    const setSelectedContent = props.setSelectedContent;
+    const { selectedContent, setSelectedContent } = props;
     return (
         <div className='menu'>
             <hr></hr>
@@ -11,6 +11,9 @@ const Menu = (props) => {
                         onClick={() => {
                             setSelectedContent('projects');
                         }}
+                        className={
+                            selectedContent === 'projects' ? 'selected' : ''
+                        }
                     >
                         Projects
                     </a>
@@ -18,20 +21,26 @@ const Menu = (props) => {
                 <li>
                     <a
                         onClick={() => {
-                            setSelectedContent('blogs');
-                            console.log('this');
+                            setSelectedContent('experience');
                         }}
+                        className={
+                            selectedContent === 'experience' ? 'selected' : ''
+                        }
                     >
-                        Blog Posts
+                        Experience
                     </a>
                 </li>
+
                 <li>
                     <a
                         onClick={() => {
-                            setSelectedContent('');
+                            setSelectedContent('blogs');
                         }}
+                        className={
+                            selectedContent === 'blogs' ? 'selected' : ''
+                        }
                     >
-                        Contact
+                        Blog
                     </a>
                 </li>
             </ul>

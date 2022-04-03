@@ -21,6 +21,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: #e57a44;
+    font-size: 40px;
 }
 
 a {
@@ -61,12 +62,16 @@ a {
     font-size: 18px;
 }
 .menu a:hover {
-    background-color: rgb(77, 69, 58);
+    background-color: #533747;
     cursor: pointer;
 }
 
 .menu a:focus {
     background-color: black;
+}
+
+.selected {
+    border-bottom: 1px solid #e57a44;
 }
 /* Content */
 .content {
