@@ -2,30 +2,8 @@ import { useState, useEffect } from 'react';
 import Post from './Post';
 import uniqid from 'uniqid';
 
-const Blogs = () => {
-    const [posts, setPosts] = useState(false);
-
-    const getPosts = async () => {
-        try {
-            const res = await fetch(
-                'http://localhost:3000/api/posts/' //'https://obscure-wildwood-18149.herokuapp.com/api/posts/ '
-            );
-            if (res.status !== 200) {
-                console.log(res.status);
-                setPosts(false);
-            } else {
-                const posts = await res.json();
-                setPosts(posts);
-            }
-        } catch (err) {
-            setPosts(false);
-            console.log(err);
-        }
-    };
-
-    useEffect(() => {
-        getPosts();
-    }, []);
+const Blogs = (props) => {
+    const posts = props.posts;
 
     if (posts) {
         return (

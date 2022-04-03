@@ -3,7 +3,7 @@ const Post = (props) => {
     const body = post.body_text;
 
     return (
-        <div className=''>
+        <div className='post'>
             <h3>{post.title}</h3>
         </div>
     );

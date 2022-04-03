@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Projects from './components/Projects';
 
 const App = () => {
-    const [selectedContent, setSelectedContent] = useState('');
+    const [selectedContent, setSelectedContent] = useState('experience');
 
     return (
         <div className='App'>

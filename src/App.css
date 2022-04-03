@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Raleway:wght@300;500&display=swap');
 body {
     background-color: #2a2d43;
+    background: linear-gradient(to bottom, #2a2d43, #362a43, #533747);
 }
 
 .App {
@@ -77,4 +78,31 @@ a {
 .content {
     width: 100%;
     min-height: 100vh;
+    animation: 500ms ease-in 1s 1 slideInFromRight;
+}
+
+@keyframes dropFromTop {
+    0% {
+        transform: translatey(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+
+    animation: float 1.5s ease-in-out infinite alternate;
+}
+/* Blogs */
+.post {
+    color: white;
+    animation: 500ms ease-in 0s 1 slideInFromRight;
 }

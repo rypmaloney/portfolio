@@ -13,13 +13,13 @@
     max-width: 800px;
     padding-bottom: 100px;
     padding: 0 10px 100px 10px;
+    animation: 600ms ease-in 0s 1 dropFromTop;
 }
 
 .title-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: 500ms ease-in 0s 1 dropFromTop;
 }
 
 .title {
@@ -33,20 +33,11 @@
 }
 
 .about-me {
-    animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
     0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-@keyframes dropFromTop {
-    0% {
-        transform: translatey(-100%);
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(0);
