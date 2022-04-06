@@ -40,7 +40,7 @@ const Title = (props) => {
     for (let i = 0; i < 100; i++) {
         let x = getRandomArbitrary(-30, 20);
         let y = getRandomArbitrary(-5, 5);
-        let wh = getRandomArbitrary(1, 2);
+        let wh = getRandomArbitrary(1, 1);
 
         coreGalaxyArray.push({ x: x, y: y, wh: wh });
     }

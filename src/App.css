@@ -2,8 +2,15 @@
 body {
     min-height: 100vh;
     /* animation: shiftBackgroundColor 5s ease-in-out infinite alternate; */
-    background: linear-gradient(to top, #2a2c43, #2c1f1f, #2a2c43);
-    /* background: linear-gradient(to bottom, #2a2d43, #362a43, #533747); */
+    /* background: linear-gradient(to top, #2a2c43, #2c1f1f, #2a2c43); */
+    background: linear-gradient(
+        to bottom,
+        #1a1c25,
+        #282a3b,
+        #46485a,
+        #282a3b,
+        #1a1c25
+    );
     /* animation: shiftBackgroundColor 5s ease-in-out infinite alternate; */
 }
 
