@@ -1,6 +1,7 @@
 import '../styles/Bio.css';
 import Menu from './Menu';
 import me from '../images/me.jpeg';
+import { useEffect } from 'react';
 
 const Title = (props) => {
     const headerHidden = props.headerHidden;
@@ -14,7 +15,7 @@ const Title = (props) => {
     for (let i = 0; i < 400; i++) {
         let x = getRandomArbitrary(-50, 50);
         let y = getRandomArbitrary(-50, 50);
-        let wh = getRandomArbitrary(1, 5);
+        let wh = getRandomArbitrary(1, 3);
 
         starArray.push({ x: x, y: y, wh: wh });
     }
@@ -63,7 +64,9 @@ const Title = (props) => {
                                 transform: `translate(${star.x}vw, ${star.y}vh)`,
                                 width: `${star.wh}px`,
                                 height: `${star.wh}px`,
+                                cursor: `${star.wh}px`,
                             }}
+                            onClick={() => console.log(`star!`)}
                         ></div>
                     );
                 })}

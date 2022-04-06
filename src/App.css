@@ -5,11 +5,13 @@ body {
     /* background: linear-gradient(to top, #2a2c43, #2c1f1f, #2a2c43); */
     background: linear-gradient(
         to bottom,
-        #1a1c25,
-        #282a3b,
-        #46485a,
-        #282a3b,
-        #1a1c25
+        #06070c,
+        #151625,
+        #2a2c43,
+        #36384b,
+        #2a2c43,
+        #181929,
+        #05060a
     );
     /* animation: shiftBackgroundColor 5s ease-in-out infinite alternate; */
 }
@@ -26,7 +28,7 @@ h3,
 h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: #9ee8eb;
+    color: #f0e1d9;
 }
 
 h1 {
@@ -48,6 +50,7 @@ a {
 .menu {
     text-align: center;
     padding: 15px 0;
+    z-index: 4;
 }
 
 .menu hr {
@@ -63,17 +66,19 @@ a {
     padding: 0;
     max-width: 400px;
     margin: auto;
+    z-index: 4;
 }
 .menu ul li {
     margin: auto;
+    z-index: 4;
 }
 
 .menu a {
     color: white;
     display: block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px;
     font-size: 24px;
+    z-index: 4;
 }
 .menu a:hover {
     background-color: #533747;
@@ -121,6 +126,7 @@ a {
 .title {
     padding: 25px;
     text-align: center;
+    z-index: 2;
 }
 
 .particle-container {
@@ -132,7 +138,7 @@ a {
     margin-right: auto;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 1;
 }
 .particle {
     border-radius: 4px;
@@ -143,6 +149,8 @@ a {
     top: 0;
     margin-left: 50vw;
     margin-top: 50vh;
+    z-index: 1;
+    transition: transform 2s;
 }
 
 /* ABOUT */
