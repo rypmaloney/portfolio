@@ -1,0 +1,46 @@
+/* MENU */
+.menu {
+    text-align: center;
+    padding: 15px 0;
+    z-index: 4;
+}
+
+.menu hr {
+    max-width: 500px;
+    border: 1px solid rgba(240, 248, 255, 0.24);
+    background-color: rgba(240, 248, 255, 0.158);
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+    z-index: 4;
+}
+.menu ul li {
+    margin: auto;
+    z-index: 4;
+}
+
+.menu a {
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    font-size: 24px;
+    z-index: 4;
+}
+.menu a:hover {
+    background-color: #533747;
+    cursor: pointer;
+}
+
+.menu a:focus {
+    background-color: black;
+}
+
+.selected {
+    border-bottom: 1px solid #e57a44;
+}

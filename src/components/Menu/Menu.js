@@ -1,4 +1,4 @@
-import '../styles/Menu.css';
+import './Menu.css';
 
 const Menu = (props) => {
     const { selectedContent, setSelectedContent, setHeaderHidden } = props;

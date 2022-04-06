@@ -1,9 +1,10 @@
 import './App.css';
-import Title from './components/Title';
-import Menu from './components/Menu';
+import Title from './components/Title/Title';
+import Menu from './components/Menu/Menu';
 import MainContent from './components/MainContent';
 import { useState } from 'react';
 import Projects from './components/Projects';
+import StarField from './components/StarField/StarField';
 
 const App = () => {
     const [selectedContent, setSelectedContent] = useState('');
@@ -18,6 +19,7 @@ const App = () => {
                 setHeaderHidden={setHeaderHidden}
             />
             <MainContent selectedContent={selectedContent} />
+            <StarField />
         </div>
     );
 };

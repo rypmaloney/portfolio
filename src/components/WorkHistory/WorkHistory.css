@@ -1,0 +1,66 @@
+.display {
+    background-color: white;
+    border: 1px solid rgba(184, 182, 182, 0.616);
+    box-shadow: rgb(161, 153, 153) 2px 10px 15px;
+    max-width: 440px;
+    max-height: 600px;
+    margin: auto;
+    padding: 30px 30px 60px 30px;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.WorkHistory-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.display h2,
+h3,
+p {
+    color: BLACK;
+    margin: 0;
+}
+
+.display p {
+    font-size: 12px;
+}
+.contact-display {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-display div {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.contact-display p {
+    font-size: 12px;
+    margin: 0;
+}
+.contact-display h1 {
+    font-size: 40px;
+    margin-top: 8px;
+    padding-right: 10px;
+}
+
+.institution {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 15px;
+}
+
+.edex-title {
+    display: flex;
+    flex-direction: row;
+}
+.edex-title p {
+    justify-self: right;
+    margin-left: auto;
+}
+.edex-title h3 {
+    margin-right: auto;
+}

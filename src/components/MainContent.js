@@ -1,6 +1,7 @@
 import Blogs from './Blogs';
 import Projects from './Projects';
 import About from './About';
+import WorkHistory from './WorkHistory/WorkHistory';
 import { useState, useEffect } from 'react';
 const MainContent = (props) => {
     const [posts, setPosts] = useState(false);
@@ -43,7 +44,7 @@ const MainContent = (props) => {
     } else if (props.selectedContent === 'experience') {
         return (
             <div className='content'>
-                <About />
+                <WorkHistory />
             </div>
         );
     } else {
