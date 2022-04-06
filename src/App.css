@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Raleway:wght@300;500&display=swap');
 body {
-    background-color: #2a2d43;
-    background: linear-gradient(to bottom, #2a2d43, #362a43, #533747);
+    min-height: 100vh;
+    /* animation: shiftBackgroundColor 5s ease-in-out infinite alternate; */
+    background: linear-gradient(to top, #2a2c43, #2c1f1f, #2a2c43);
+    /* background: linear-gradient(to bottom, #2a2d43, #362a43, #533747); */
+    /* animation: shiftBackgroundColor 5s ease-in-out infinite alternate; */
 }
 
 .App {
@@ -15,14 +18,15 @@ h2,
 h3,
 h4 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    color: #9ee8eb;
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
     color: #e57a44;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 a {
@@ -36,6 +40,7 @@ a {
 /* MENU */
 .menu {
     text-align: center;
+    padding: 15px 0;
 }
 
 .menu hr {
@@ -59,8 +64,9 @@ a {
 .menu a {
     color: white;
     display: block;
-    padding: 10px;
-    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
 }
 .menu a:hover {
     background-color: #533747;
@@ -78,7 +84,100 @@ a {
 .content {
     width: 100%;
     min-height: 100vh;
-    animation: 500ms ease-in 1s 1 slideInFromRight;
+    background: #28262b5e;
+}
+
+.content-header {
+    /* animation: float 1.5s ease-in-out infinite alternate; */
+}
+
+/* title */
+.header {
+    width: 100vw;
+    height: calc(100vh - 150px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    justify-content: center;
+    opacity: 1;
+    transition: all 2s;
+}
+.header-hidden {
+    height: 0 !important;
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+.title {
+    padding: 25px;
+    text-align: center;
+}
+
+.particle-container {
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.particle {
+    border-radius: 4px;
+    background-color: rgb(231, 222, 222);
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 0;
+    margin-left: 50vw;
+    margin-top: 50vh;
+}
+
+/* ABOUT */
+.headshot img {
+    border-radius: 2px;
+    box-shadow: 2px 5px 15px rgba(28, 28, 53, 0.959);
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes leaveToTop {
+    0% {
+        transform: scaleY(100%);
+    }
+    100% {
+        transform: scaleY(0%);
+    }
+}
+
+@keyframes shiftBackgroundColor {
+    0% {
+        background: linear-gradient(to bottom, #2a2d43, #362a43, #2c1f1f);
+    }
+    50% {
+        background: linear-gradient(to bottom, #2c1f1f, #2a2d43, #362a43);
+    }
+    100% {
+        background: linear-gradient(to bottom, #362a43, #2c1f1f, #2a2d43);
+    }
+}
+
+.header {
+    /* This section calls the slideInFromLeft animation we defined above */
 }
 
 @keyframes dropFromTop {
@@ -96,13 +195,13 @@ a {
     }
 
     to {
-        transform: translateY(30px);
+        transform: translateY(5px);
     }
-
-    animation: float 1.5s ease-in-out infinite alternate;
 }
 /* Blogs */
 .post {
+    background-color: #2a2d43;
+    height: 30px;
     color: white;
     animation: 500ms ease-in 0s 1 slideInFromRight;
 }

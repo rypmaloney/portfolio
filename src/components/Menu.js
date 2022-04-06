@@ -1,7 +1,7 @@
 import '../styles/Menu.css';
 
 const Menu = (props) => {
-    const { selectedContent, setSelectedContent } = props;
+    const { selectedContent, setSelectedContent, setHeaderHidden } = props;
     return (
         <div className='menu'>
             <hr></hr>
@@ -10,6 +10,7 @@ const Menu = (props) => {
                     <a
                         onClick={() => {
                             setSelectedContent('projects');
+                            setHeaderHidden(true);
                         }}
                         className={
                             selectedContent === 'projects' ? 'selected' : ''
@@ -22,6 +23,7 @@ const Menu = (props) => {
                     <a
                         onClick={() => {
                             setSelectedContent('experience');
+                            setHeaderHidden(true);
                         }}
                         className={
                             selectedContent === 'experience' ? 'selected' : ''
@@ -35,6 +37,7 @@ const Menu = (props) => {
                     <a
                         onClick={() => {
                             setSelectedContent('blogs');
+                            setHeaderHidden(true);
                         }}
                         className={
                             selectedContent === 'blogs' ? 'selected' : ''

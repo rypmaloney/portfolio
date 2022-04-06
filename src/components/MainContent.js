@@ -1,6 +1,6 @@
 import Blogs from './Blogs';
 import Projects from './Projects';
-import Experience from './Experience';
+import About from './About';
 import { useState, useEffect } from 'react';
 const MainContent = (props) => {
     const [posts, setPosts] = useState(false);
@@ -40,12 +40,14 @@ const MainContent = (props) => {
                 <Blogs posts={posts} />
             </div>
         );
-    } else {
+    } else if (props.selectedContent === 'experience') {
         return (
             <div className='content'>
-                <Experience />
+                <About />
             </div>
         );
+    } else {
+        return <div className=''></div>;
     }
 };
 

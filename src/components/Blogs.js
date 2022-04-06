@@ -7,8 +7,7 @@ const Blogs = (props) => {
 
     if (posts) {
         return (
-            <div>
-                <h1>Blogs</h1>
+            <div className=''>
                 {posts.map((post) => {
                     return <Post post={post} key={uniqid()} />;
                 })}
@@ -16,7 +15,7 @@ const Blogs = (props) => {
         );
     } else {
         return (
-            <div>
+            <div className=''>
                 <h1>Blogs</h1>
                 <p>
                     Hmm... the blog posts don't seem to be loading. Maybe you
