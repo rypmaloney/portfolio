@@ -22,37 +22,3 @@
     text-align: center;
     z-index: 2;
 }
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes leaveToTop {
-    0% {
-        transform: scaleY(100%);
-    }
-    100% {
-        transform: scaleY(0%);
-    }
-}
-
-@keyframes shiftBackgroundColor {
-    0% {
-        background: linear-gradient(to bottom, #2a2d43, #362a43, #2c1f1f);
-    }
-    50% {
-        background: linear-gradient(to bottom, #2c1f1f, #2a2d43, #362a43);
-    }
-    100% {
-        background: linear-gradient(to bottom, #362a43, #2c1f1f, #2a2d43);
-    }
-}
-
-.header {
-    /* This section calls the slideInFromLeft animation we defined above */
-}

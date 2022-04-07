@@ -9,11 +9,17 @@
     animation-name: slideInFromRight;
     animation-iteration-count: 1;
 }
+
 .bio-wrapper {
     display: flex;
     flex-direction: row;
     max-width: 800px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56, 25, 25, 0.384);
+    border-radius: 5px;
+    padding: 25px;
 }
 
 .me {
@@ -21,10 +27,14 @@
     height: 150px;
     border-radius: 5px;
     padding-right: 20px;
+    margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
     .bio-wrapper {
         flex-direction: column;
+    }
+    .about h2 {
+        text-align: center;
     }
 }
