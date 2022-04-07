@@ -29,11 +29,12 @@
     color: white;
     display: block;
     padding: 10px 10px;
+    border-radius: 5px;
     font-size: 24px;
     z-index: 4;
 }
 .menu a:hover {
-    background-color: #533747;
+    background-color: #382831;
     cursor: pointer;
 }
 

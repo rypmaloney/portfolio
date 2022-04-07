@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Raleway:wght@300;500&display=swap');
+html {
+    height: 100%;
+}
+
 body {
-    min-height: 100vh;
+    min-height: 100%; /* make sure it is at least as tall as the viewport */
+    position: relative;
     background: linear-gradient(
-        to bottom,
-        #06070c,
-        #151625,
-        #2a2c43,
-        #36384b,
-        #2a2c43,
-        #181929,
-        #05060a
-    );
+            to bottom,
+            #06070c,
+            #151625,
+            #2a2c43,
+            #36384b,
+            #2a2c43,
+            #181929,
+            #05060a
+        )
+        fixed;
+}
+.app {
+    height: 100%;
 }
 
 p {

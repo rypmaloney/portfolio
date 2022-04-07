@@ -3,6 +3,7 @@ import About from './About/About';
 import WorkHistory from './WorkHistory/WorkHistory';
 import { useState, useEffect } from 'react';
 import './MainContent.css';
+import StarField from './StarField/StarField';
 
 const MainContent = (props) => {
     const [posts, setPosts] = useState(false);
