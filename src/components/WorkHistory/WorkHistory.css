@@ -8,6 +8,9 @@
     padding: 30px 30px 60px 30px;
     padding-top: 10px;
     z-index: 10;
+    animation-duration: 2s;
+    animation-name: slideInFromRight;
+    animation-iteration-count: 1;
 }
 
 .WorkHistory-wrapper {
@@ -18,8 +21,8 @@
 }
 
 .display h2,
-h3,
-p {
+.display h3,
+.display p {
     color: BLACK;
     margin: 0;
 }

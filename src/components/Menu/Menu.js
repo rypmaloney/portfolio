@@ -36,14 +36,14 @@ const Menu = (props) => {
                 <li>
                     <a
                         onClick={() => {
-                            setSelectedContent('blogs');
+                            setSelectedContent('about');
                             setHeaderHidden(true);
                         }}
                         className={
-                            selectedContent === 'blogs' ? 'selected' : ''
+                            selectedContent === 'about' ? 'selected' : ''
                         }
                     >
-                        Blog
+                        About
                     </a>
                 </li>
             </ul>

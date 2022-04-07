@@ -21,6 +21,7 @@ body {
 
 p {
     font-family: 'Nunito Sans', sans-serif;
+    color: aliceblue;
 }
 
 h2,
@@ -42,15 +43,18 @@ a {
     color: #e57a44;
 }
 
-/* PROJECTS */
-.projects {
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-/* MENU */
-
-@keyframes dropFromTop {
+@keyframes dropFromBottom {
     0% {
-        transform: translatey(-100%);
+        transform: translatey(100%);
     }
     100% {
         transform: translateX(0);
@@ -65,11 +69,4 @@ a {
     to {
         transform: translateY(5px);
     }
-}
-/* Blogs */
-.post {
-    background-color: #2a2d43;
-    height: 30px;
-    color: white;
-    animation: 500ms ease-in 0s 1 slideInFromRight;
 }

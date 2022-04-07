@@ -1,8 +1,9 @@
-import Blogs from './Blogs';
-import Projects from './Projects';
-import About from './About';
+import Projects from './Projects/Projects';
+import About from './About/About';
 import WorkHistory from './WorkHistory/WorkHistory';
 import { useState, useEffect } from 'react';
+import './MainContent.css';
+
 const MainContent = (props) => {
     const [posts, setPosts] = useState(false);
 
@@ -35,10 +36,10 @@ const MainContent = (props) => {
                 <Projects />
             </div>
         );
-    } else if (props.selectedContent === 'blogs') {
+    } else if (props.selectedContent === 'about') {
         return (
             <div className='content'>
-                <Blogs posts={posts} />
+                <About />
             </div>
         );
     } else if (props.selectedContent === 'experience') {

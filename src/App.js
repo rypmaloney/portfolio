@@ -1,9 +1,9 @@
 import './App.css';
-import Title from './components/Title/Title';
+import Title from './components/TitlePage/Title';
 import Menu from './components/Menu/Menu';
 import MainContent from './components/MainContent';
 import { useState } from 'react';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import StarField from './components/StarField/StarField';
 
 const App = () => {
