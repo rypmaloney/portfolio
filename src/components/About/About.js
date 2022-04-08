@@ -1,6 +1,7 @@
 import './About.css';
 import me from '../../images/me.jpeg';
 import WelcomeTyping from './WelcomeTyping';
+import Contact from './Contact';
 
 const About = () => {
     return (
@@ -19,6 +20,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
+            <Contact />
         </div>
     );
 };

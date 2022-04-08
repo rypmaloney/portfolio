@@ -10,7 +10,8 @@
     animation-iteration-count: 1;
 }
 
-.bio-wrapper {
+.bio-wrapper,
+.contact-wrapper {
     display: flex;
     flex-direction: row;
     max-width: 800px;
@@ -20,6 +21,7 @@
     background-color: #382831;
     border-radius: 5px;
     padding: 25px;
+    margin: 5px;
 }
 
 .me {
@@ -38,11 +40,12 @@
     overflow: hidden;
     position: relative;
     left: 0%;
-    border-right: 0.15em solid #e57a44; /* The typwriter cursor */
+
+    border-right: 0.15em solid orange; /* The typwriter cursor */
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 1s;
+    animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 1.5s;
 }
 
 @keyframes typing {
