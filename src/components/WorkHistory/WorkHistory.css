@@ -1,23 +1,23 @@
 .display {
     background-color: white;
     border: 1px solid rgba(184, 182, 182, 0.616);
-    box-shadow: rgb(161, 153, 153) 2px 10px 15px;
+    box-shadow: rgb(0, 0, 0) 2px 10px 15px;
     max-width: 440px;
     max-height: 600px;
     margin: auto;
     padding: 30px 30px 60px 30px;
     padding-top: 10px;
     z-index: 10;
-    animation-duration: 2s;
-    animation-name: slideInFromRight;
-    animation-iteration-count: 1;
 }
 
 .WorkHistory-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation-duration: 2s;
+    animation-name: slideInFromRight;
+    animation-iteration-count: 1;
 }
 
 .display h2,
@@ -25,6 +25,11 @@
 .display p {
     color: BLACK;
     margin: 0;
+    font-size: 1em;
+}
+
+.download {
+    margin-top: 15px;
 }
 
 .display p {
@@ -41,11 +46,11 @@
 }
 
 .contact-display p {
-    font-size: 12px;
+    font-size: 0.7em;
     margin: 0;
 }
 .contact-display h1 {
-    font-size: 40px;
+    font-size: 2em;
     margin-top: 8px;
     padding-right: 10px;
 }

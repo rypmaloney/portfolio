@@ -1,5 +1,6 @@
 import './About.css';
 import me from '../../images/me.jpeg';
+import WelcomeTyping from './WelcomeTyping';
 
 const About = () => {
     return (
@@ -7,7 +8,7 @@ const About = () => {
             <div className='bio-wrapper'>
                 <img className='me' src={me}></img>
                 <div className='bio'>
-                    <h2>Ryan Maloney</h2>
+                    <WelcomeTyping />
                     <p>
                         Highly motivated publishing professional with interest
                         in technical communications and front-end web

@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import Education from './Education';
 import Experience from './Experience';
+import pdf from '../../images/Resume_2021.pdf';
 import './WorkHistory.css';
 
 const Resume = (props) => {
@@ -12,27 +13,27 @@ const Resume = (props) => {
             institution: 'UMass Amherst',
             year: '2013-2016',
             details:
-                'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual',
+                'Bachelors degree in English. Thesis in Postmodern Literature',
         },
     ]);
     const [experience, setExperience] = useState([
         {
-            institution: 'CMSA',
-            year: '2017-2021',
+            institution: 'Fihtank Learning',
+            year: '2021-Present',
             details:
-                'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.',
+                'Manages the development of new website features and resources for the Fishtank Learning website. Identifies product improvements and plans out, executes, and oversees related projects. Plans and oversee changes to both the back end and front end of the Fishtank Learning website. Coordinates the development team through Jira.',
         },
         {
             institution: 'CMSA',
             year: '2017-2021',
             details:
-                'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.',
+                'Coordinates web presence on multiple sites, producing general content and design. Assists editor-in-chief, and coordinates production process of all Center publications. Produces digital and print content for a variety of stakeholders, including donors, faculty, and staff. Films, produces, and edits promotional interviews with visitors, postdocs, and faculty',
         },
         {
-            institution: 'CMSA',
-            year: '2017-2021',
+            institution: 'Umass Scholarly Communications',
+            year: '2015-2016',
             details:
-                'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.',
+                'Worked on grant proposal process and implementation of  the Outernet Project, providing open access educational materials to internet poor communities. Oversaw the migration of UMass Center for International Education to the repository.',
         },
     ]);
 
@@ -47,17 +48,18 @@ const Resume = (props) => {
             </div>
             <hr />
             <div className='edex-display'>
-                <h2>Education</h2>
-                {education.map((edu) => {
-                    return <Education key={edu.id} school={edu} />;
-                })}
-            </div>
-            <hr />
-            <div className='edex-display'>
                 <h2>Experience</h2>
 
                 {experience.map((exp) => {
                     return <Experience key={exp.id} experience={exp} />;
+                })}
+            </div>
+            <hr />
+
+            <div className='edex-display'>
+                <h2>Education</h2>
+                {education.map((edu) => {
+                    return <Education key={edu.id} school={edu} />;
                 })}
             </div>
         </div>

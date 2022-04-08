@@ -30,6 +30,45 @@
     margin: auto;
 }
 
+.welcome {
+    width: 200px;
+}
+
+.welcome h2 {
+    overflow: hidden;
+    position: relative;
+    left: 0%;
+    border-right: 0.15em solid #e57a44; /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        visibility: visible;
+    }
+
+    to {
+        width: 100%;
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .bio-wrapper {
         flex-direction: column;
