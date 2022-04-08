@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import Education from './Education';
 import Experience from './Experience';
-import pdf from '../../images/Resume_2021.pdf';
+
 import './WorkHistory.css';
 
 const Resume = (props) => {

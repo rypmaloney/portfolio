@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './WorkHistory.css';
 import Resume from './Resume';
 import pdf from '../../images/Resume_2021.pdf';
