@@ -1,5 +1,6 @@
 import './StarField.css';
 import { useEffect, useState } from 'react';
+import uniqid from 'uniqid';
 
 const StarField = () => {
     //Need to calculate page height so that starfield extends onto pages longer than 100vh
@@ -13,9 +14,9 @@ const StarField = () => {
 
         if (currentPageHeight !== undefined) {
             setPageHeight(currentPageHeight);
-            console.log(pageHeight);
         }
     });
+
     function getRandomArbitrary(min, max) {
         let num = Math.random() * (max - min) + min;
 
@@ -23,44 +24,35 @@ const StarField = () => {
     }
 
     let starArray = [];
+    let halfPageHeight = pageHeight / 2;
     for (let i = 0; i < 400; i++) {
         //fill full page with these stars
-        let halfPageHeight = pageHeight / 2;
+
         let x = getRandomArbitrary(-50, 50);
         let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
         let wh = getRandomArbitrary(1, 3);
 
-        starArray.push({ x: x, y: y, wh: wh });
+        starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
     }
 
     let galaxyArray = [];
-    for (let i = 0; i < 400; i++) {
-        let thirdPageHeight = pageHeight / 8;
+    let sixteenPageHeight = pageHeight / 8;
+    for (let i = 0; i < 300; i++) {
         //fill half page with these stars
         let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-thirdPageHeight, thirdPageHeight);
+        let y = getRandomArbitrary(-sixteenPageHeight, sixteenPageHeight);
         let wh = getRandomArbitrary(1, 2);
 
-        galaxyArray.push({ x: x, y: y, wh: wh });
+        galaxyArray.push({ x: x, y: y, wh: wh, id: uniqid() });
     }
     let coreBeltArray = [];
-    for (let i = 0; i < 300; i++) {
-        let quarterPageHeight = pageHeight / 16;
+    let thiryPageHeight = pageHeight / 30;
+    for (let i = 0; i < 200; i++) {
         let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-quarterPageHeight, quarterPageHeight);
+        let y = getRandomArbitrary(-thiryPageHeight, thiryPageHeight);
         let wh = getRandomArbitrary(1, 2);
 
-        coreBeltArray.push({ x: x, y: y, wh: wh });
-    }
-
-    let coreGalaxyArray = [];
-    let eighthPageHeight = pageHeight / 20;
-    for (let i = 0; i < 400; i++) {
-        let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-eighthPageHeight, eighthPageHeight);
-        let wh = getRandomArbitrary(1, 1);
-
-        coreGalaxyArray.push({ x: x, y: y, wh: wh });
+        coreBeltArray.push({ x: x, y: y, wh: wh, id: uniqid() });
     }
 
     return (
@@ -76,6 +68,7 @@ const StarField = () => {
                             cursor: `${star.wh}px`,
                         }}
                         onClick={() => console.log(`star!`)}
+                        // key={star.id}
                     ></div>
                 );
             })}
@@ -88,22 +81,11 @@ const StarField = () => {
                             width: `${star.wh}px`,
                             height: `${star.wh}px`,
                         }}
+                        // key={star.id}
                     ></div>
                 );
             })}
 
-            {coreGalaxyArray.map((star) => {
-                return (
-                    <div
-                        className='particle'
-                        style={{
-                            transform: `translate(${star.x}vw, ${star.y}px)`,
-                            width: `${star.wh}px`,
-                            height: `${star.wh}px`,
-                        }}
-                    ></div>
-                );
-            })}
             {coreBeltArray.map((star) => {
                 return (
                     <div
@@ -113,6 +95,7 @@ const StarField = () => {
                             width: `${star.wh}px`,
                             height: `${star.wh}px`,
                         }}
+                        // key={star.id}
                     ></div>
                 );
             })}

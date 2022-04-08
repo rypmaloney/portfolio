@@ -4,7 +4,7 @@ import Resume from './Resume';
 
 const WorkHistory = () => {
     return (
-        <div classname='WorkHistory-wrapper'>
+        <div className='WorkHistory-wrapper'>
             <div className='display'>
                 <Resume />
             </div>
