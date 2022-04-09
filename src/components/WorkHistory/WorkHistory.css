@@ -68,6 +68,7 @@
 .edex-title p {
     justify-self: right;
     margin-left: auto;
+    padding: 5px;
 }
 .edex-title h3 {
     margin-right: auto;

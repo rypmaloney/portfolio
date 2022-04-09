@@ -19,7 +19,7 @@ const App = () => {
                 setHeaderHidden={setHeaderHidden}
             />
             <MainContent selectedContent={selectedContent} />
-            <StarField />
+            <StarField selectedContent={selectedContent} />
         </div>
     );
 };

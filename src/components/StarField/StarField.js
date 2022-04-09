@@ -2,10 +2,12 @@ import './StarField.css';
 import { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
-const StarField = () => {
+const StarField = (props) => {
     //Need to calculate page height so that starfield extends onto pages longer than 100vh
     const [pageHeight, setPageHeight] = useState(1700);
+    const [starArray, setStarArray] = useState([]);
 
+    //set the intial star array. Position based on height of page.
     useEffect(() => {
         //find the height of the particle container, which defaults to full body height
         let currentPageHeight = document.querySelectorAll(
@@ -15,7 +17,17 @@ const StarField = () => {
         if (currentPageHeight !== undefined) {
             setPageHeight(currentPageHeight);
         }
-    });
+
+        let startingStarArray = createStarArray();
+        setStarArray(startingStarArray);
+    }, []);
+
+    //Everytime the main content changes move the array and transition
+    useEffect(() => {
+        if (starArray.length > 1) {
+            moveStarArray(starArray);
+        }
+    }, [props.selectedContent]);
 
     function getRandomArbitrary(min, max) {
         let num = Math.random() * (max - min) + min;
@@ -23,37 +35,33 @@ const StarField = () => {
         return num;
     }
 
-    let starArray = [];
-    let halfPageHeight = pageHeight / 2;
-    for (let i = 0; i < 400; i++) {
-        //fill full page with these stars
+    const createStarArray = () => {
+        let starArray = [];
+        let halfPageHeight = pageHeight / 2;
+        for (let i = 0; i < 400; i++) {
+            let x = getRandomArbitrary(-50, 50);
+            let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
+            let wh = getRandomArbitrary(1, 3);
+            //Set intial with id
+            starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
+        }
+        return starArray;
+    };
 
-        let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
-        let wh = getRandomArbitrary(1, 3);
+    const moveStarArray = (starArray) => {
+        let newStarArray = starArray.slice();
+        let halfPageHeight = pageHeight / 2;
+        for (let i = 0; i < 400; i++) {
+            //fill full page with these stars
 
-        starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
-    }
-
-    let galaxyArray = [];
-    let sixteenPageHeight = pageHeight / 8;
-    for (let i = 0; i < 300; i++) {
-        //fill half page with these stars
-        let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-sixteenPageHeight, sixteenPageHeight);
-        let wh = getRandomArbitrary(1, 2);
-
-        galaxyArray.push({ x: x, y: y, wh: wh, id: uniqid() });
-    }
-    let coreBeltArray = [];
-    let thiryPageHeight = pageHeight / 30;
-    for (let i = 0; i < 200; i++) {
-        let x = getRandomArbitrary(-50, 50);
-        let y = getRandomArbitrary(-thiryPageHeight, thiryPageHeight);
-        let wh = getRandomArbitrary(1, 2);
-
-        coreBeltArray.push({ x: x, y: y, wh: wh, id: uniqid() });
-    }
+            let x = getRandomArbitrary(-50, 50);
+            let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
+            let wh = getRandomArbitrary(1, 3);
+            //use id from original array, this ensures a transition instead of rerendering a fresh array
+            newStarArray[i] = { x: x, y: y, wh: wh, id: starArray[i].id };
+        }
+        setStarArray(newStarArray);
+    };
 
     return (
         <div className='particle-container'>
@@ -68,34 +76,7 @@ const StarField = () => {
                             cursor: `${star.wh}px`,
                         }}
                         onClick={() => console.log(`star!`)}
-                        // key={star.id}
-                    ></div>
-                );
-            })}
-            {galaxyArray.map((star) => {
-                return (
-                    <div
-                        className='particle'
-                        style={{
-                            transform: `translate(${star.x}vw, ${star.y}px)`,
-                            width: `${star.wh}px`,
-                            height: `${star.wh}px`,
-                        }}
-                        // key={star.id}
-                    ></div>
-                );
-            })}
-
-            {coreBeltArray.map((star) => {
-                return (
-                    <div
-                        className='particle'
-                        style={{
-                            transform: `translate(${star.x}vw, ${star.y}px)`,
-                            width: `${star.wh}px`,
-                            height: `${star.wh}px`,
-                        }}
-                        // key={star.id}
+                        key={star.id}
                     ></div>
                 );
             })}

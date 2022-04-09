@@ -11,7 +11,6 @@ const WorkHistory = () => {
             <a
                 className='download'
                 href={pdf}
-                without
                 rel='noopener noreferrer'
                 target='_blank'
             >
