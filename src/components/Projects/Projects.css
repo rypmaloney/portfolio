@@ -24,7 +24,9 @@
     border-radius: 5px;
     box-shadow: 5px 2px 30px #141314;
     background-color: #3828319a;
-    margin: 20px;
+    border-bottom: 2px solid rgb(103, 133, 161);
+    margin: 10px;
+    min-height: 330px;
     padding: 15px;
 }
 .project-tools {
@@ -86,12 +88,17 @@
         flex-direction: column-reverse;
         padding: 15px 15px;
         margin: 20px 0;
+        max-width: 300px;
     }
 
     .image_carousel {
         margin-left: -20px;
     }
-    .image_carousel {
-        max-width: 340px;
+
+    .img_carousel_wrapper {
+        max-width: 300px;
+    }
+    .image_carousel img {
+        max-width: 240px;
     }
 }

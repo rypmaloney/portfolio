@@ -22,3 +22,8 @@
     text-align: center;
     z-index: 2;
 }
+
+.title h2 {
+    color: rgb(240, 240, 240);
+    font-weight: 100;
+}

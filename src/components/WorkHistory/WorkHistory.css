@@ -73,3 +73,13 @@
 .edex-title h3 {
     margin-right: auto;
 }
+
+@media only screen and (max-width: 750px) {
+    .institution {
+        margin: 5px 0 0 4px;
+    }
+
+    .contact-display h1 {
+        font-size: 3em;
+    }
+}

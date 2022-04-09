@@ -30,7 +30,7 @@ const Projects = () => {
                             <a href='https://rypmaloney.github.io/blog-cms'>
                                 <button>Live Preivew</button>
                             </a>
-                            <a href='/https://github.com/rypmaloney/blog-cms'>
+                            <a href='https://github.com/rypmaloney/blog-cms'>
                                 <button>Repository</button>
                             </a>
                         </div>
