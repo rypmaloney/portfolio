@@ -47,6 +47,19 @@ a {
     color: #e57a44;
 }
 
+button {
+    padding: 5px;
+    margin: 5px;
+    background-color: #21233a;
+    color: #e57a44;
+    cursor: pointer;
+    border: 1px solid #2a2c43;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: #0a0e38;
+}
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);

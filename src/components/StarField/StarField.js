@@ -9,15 +9,6 @@ const StarField = (props) => {
 
     //set the intial star array. Position based on height of page.
     useEffect(() => {
-        //find the height of the particle container, which defaults to full body height
-        let currentPageHeight = document.querySelectorAll(
-            '.particle-container'
-        )[0].offsetHeight;
-
-        if (currentPageHeight !== undefined) {
-            setPageHeight(currentPageHeight);
-        }
-
         let startingStarArray = createStarArray();
         setStarArray(startingStarArray);
     }, []);
@@ -37,10 +28,10 @@ const StarField = (props) => {
 
     const createStarArray = () => {
         let starArray = [];
-        let halfPageHeight = pageHeight / 2;
+
         for (let i = 0; i < 400; i++) {
             let x = getRandomArbitrary(-50, 50);
-            let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
+            let y = getRandomArbitrary(-50, 50);
             let wh = getRandomArbitrary(1, 3);
             //Set intial with id
             starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
@@ -50,12 +41,12 @@ const StarField = (props) => {
 
     const moveStarArray = (starArray) => {
         let newStarArray = starArray.slice();
-        let halfPageHeight = pageHeight / 2;
+
         for (let i = 0; i < 400; i++) {
             //fill full page with these stars
 
             let x = getRandomArbitrary(-50, 50);
-            let y = getRandomArbitrary(-halfPageHeight, halfPageHeight);
+            let y = getRandomArbitrary(-50, 50);
             let wh = getRandomArbitrary(1, 3);
             //use id from original array, this ensures a transition instead of rerendering a fresh array
             newStarArray[i] = { x: x, y: y, wh: wh, id: starArray[i].id };
@@ -70,7 +61,7 @@ const StarField = (props) => {
                     <div
                         className='particle'
                         style={{
-                            transform: `translate(${star.x}vw, ${star.y}px)`,
+                            transform: `translate(${star.x}vw, ${star.y}vh)`,
                             width: `${star.wh}px`,
                             height: `${star.wh}px`,
                             cursor: `${star.wh}px`,

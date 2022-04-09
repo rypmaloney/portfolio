@@ -22,10 +22,18 @@ const Projects = () => {
                             made up of a CMS, the API, and a frontend to display
                             posts.
                         </p>
-                        <p>
+                        <p class='project-tools'>
                             API with Node.JS and Express, authenticates with
                             JWT, CMS with React and Tailwind
                         </p>
+                        <div className='project-btns'>
+                            <a href='https://rypmaloney.github.io/blog-cms'>
+                                <button>Live Preivew</button>
+                            </a>
+                            <a href='/https://github.com/rypmaloney/blog-cms'>
+                                <button>Repository</button>
+                            </a>
+                        </div>
                     </div>
 
                     <ImageCarousel imgOne={CMS_login} imgTwo={CMS_update} />
@@ -38,7 +46,17 @@ const Projects = () => {
                             tailwind. I used HeadlessUI for toggle and modal
                             components.
                         </p>
-                        <p>React, Tailwind, and HeadlessUI</p>
+                        <p class='project-tools'>
+                            React, Tailwind, and HeadlessUI
+                        </p>
+                        <div className='project-btns'>
+                            <a href='https://rypmaloney.github.io/wordle-unlimited/'>
+                                <button>Live Preivew</button>
+                            </a>
+                            <a href='https://github.com/rypmaloney/wordle-unlimited'>
+                                <button>Repository</button>
+                            </a>
+                        </div>
                     </div>
 
                     <ImageCarousel imgOne={WORDLE_dark} imgTwo={WORDLE_light} />
@@ -52,9 +70,22 @@ const Projects = () => {
                             create an account, log in, and upvote on posts
                             (without refreshing the page).
                         </p>
-                        <p>
+                        <p class='project-tools'>
                             Node.JS, Express, and EJS. Passport/bycript for
-                            authenticated user sessions.
+                            authenticated user sessions
+                        </p>
+
+                        <div className='project-btns'>
+                            <a href='https://private-forum.herokuapp.com/'>
+                                <button>Live Preivew *</button>
+                            </a>
+                            <a href='https://github.com/rypmaloney/private-message-board'>
+                                <button>Repository</button>
+                            </a>
+                        </div>
+                        <p className='note'>
+                            * This is hosted through a free Heroku plan, it may
+                            take a second to spin up.
                         </p>
                     </div>
 
@@ -70,7 +101,17 @@ const Projects = () => {
                             all of my functions before creating them.
                         </p>
 
-                        <p>Vanilla HTML, CSS, and JavaScript.</p>
+                        <p class='project-tools'>
+                            Vanilla HTML, CSS, and JavaScript
+                        </p>
+                        <div className='project-btns'>
+                            <a href='https://htmlpreview.github.io/?https://github.com/rypmaloney/battleship/blob/d7692551195a415232b57179286f1f455607c69c/dist/index.html'>
+                                <button>Live Preivew</button>
+                            </a>
+                            <a href='https://github.com/rypmaloney/battleship'>
+                                <button>Repository</button>
+                            </a>
+                        </div>
                     </div>
 
                     <ImageCarousel imgOne={BS_game} imgTwo={BS_place} />

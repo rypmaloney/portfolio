@@ -1,10 +1,10 @@
 import './About.css';
 
-const Contact = () => {
+const Tools = () => {
     return (
-        <div className='contact-wrapper'>
-            <div className='contact'>
-                <h2>Contact</h2>
+        <div className='tools-wrapper'>
+            <div className='tools'>
+                <h2>Tools</h2>
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
                     width='24'
@@ -26,4 +26,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Tools;

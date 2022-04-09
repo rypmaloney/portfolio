@@ -10,8 +10,7 @@
     animation-iteration-count: 1;
 }
 
-.bio-wrapper,
-.contact-wrapper {
+.bio-wrapper {
     display: flex;
     flex-direction: row;
     max-width: 800px;
@@ -46,6 +45,14 @@
     margin: 0 auto;
     animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
     animation-delay: 1.5s;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+}
+.contact {
+    margin-left: auto;
 }
 
 @keyframes typing {

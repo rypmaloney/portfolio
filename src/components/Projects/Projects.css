@@ -27,6 +27,10 @@
     margin: 20px;
     padding: 15px;
 }
+.project-tools {
+    color: rgb(180, 185, 211);
+    font-size: 0.8rem;
+}
 
 .img_carousel_wrapper {
     width: 340px;
@@ -69,6 +73,11 @@
 .img_back {
     z-index: 0;
     left: 40px;
+}
+
+.note {
+    font-size: 0.5em;
+    color: azure;
 }
 
 @media only screen and (max-width: 750px) {
