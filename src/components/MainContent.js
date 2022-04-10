@@ -40,7 +40,7 @@ const MainContent = (props) => {
     } else if (props.selectedContent === 'about') {
         return (
             <div className='content'>
-                <About />
+                <About setSelectedContent={props.setSelectedContent} />
             </div>
         );
     } else if (props.selectedContent === 'experience') {

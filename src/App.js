@@ -18,7 +18,10 @@ const App = () => {
                 selectedContent={selectedContent}
                 setHeaderHidden={setHeaderHidden}
             />
-            <MainContent selectedContent={selectedContent} />
+            <MainContent
+                selectedContent={selectedContent}
+                setSelectedContent={setSelectedContent}
+            />
             <StarField selectedContent={selectedContent} />
         </div>
     );

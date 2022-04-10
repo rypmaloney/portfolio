@@ -9,6 +9,19 @@ const Menu = (props) => {
                 <li>
                     <a
                         onClick={() => {
+                            setSelectedContent('about');
+                            setHeaderHidden(true);
+                        }}
+                        className={
+                            selectedContent === 'about' ? 'selected' : ''
+                        }
+                    >
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() => {
                             setSelectedContent('projects');
                             setHeaderHidden(true);
                         }}
@@ -30,20 +43,6 @@ const Menu = (props) => {
                         }
                     >
                         Experience
-                    </a>
-                </li>
-
-                <li>
-                    <a
-                        onClick={() => {
-                            setSelectedContent('about');
-                            setHeaderHidden(true);
-                        }}
-                        className={
-                            selectedContent === 'about' ? 'selected' : ''
-                        }
-                    >
-                        About
                     </a>
                 </li>
             </ul>

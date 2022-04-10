@@ -3,35 +3,41 @@ import { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
 const StarField = (props) => {
-    //Need to calculate page height so that starfield extends onto pages longer than 100vh
-    const [pageHeight, setPageHeight] = useState(1700);
     const [starArray, setStarArray] = useState([]);
+    const [galaxyArray, setGalaxyArray] = useState([]);
+    const [coreArray, setCoreArray] = useState([]);
 
     //set the intial star array. Position based on height of page.
     useEffect(() => {
-        let startingStarArray = createStarArray();
+        let startingStarArray = createStarArray(300, 50);
+        let startingGalaxyArray = createStarArray(400, 8);
         setStarArray(startingStarArray);
+        setGalaxyArray(startingGalaxyArray);
     }, []);
 
     //Everytime the main content changes move the array and transition
     useEffect(() => {
         if (starArray.length > 1) {
-            moveStarArray(starArray);
+            let movedStarArray = moveStarArray(starArray, 50);
+            setStarArray(movedStarArray);
+            let movedGalaxyArray = moveStarArray(galaxyArray, 8);
+            setGalaxyArray(movedGalaxyArray);
         }
+        //change star arrays anytime the focused content section changes
     }, [props.selectedContent]);
 
     function getRandomArbitrary(min, max) {
         let num = Math.random() * (max - min) + min;
-
         return num;
     }
 
-    const createStarArray = () => {
+    const createStarArray = (numberOfStars, magnitude) => {
         let starArray = [];
 
-        for (let i = 0; i < 400; i++) {
+        for (let i = 0; i < numberOfStars; i++) {
             let x = getRandomArbitrary(-50, 50);
-            let y = getRandomArbitrary(-50, 50);
+            //magnitude is distance from center (vh)
+            let y = getRandomArbitrary(-magnitude, magnitude);
             let wh = getRandomArbitrary(1, 3);
             //Set intial with id
             starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
@@ -39,24 +45,39 @@ const StarField = (props) => {
         return starArray;
     };
 
-    const moveStarArray = (starArray) => {
-        let newStarArray = starArray.slice();
+    const moveStarArray = (array, magnitude) => {
+        let newStarArray = array.slice();
 
-        for (let i = 0; i < 400; i++) {
-            //fill full page with these stars
-
+        for (let i = 0; i < array.length; i++) {
             let x = getRandomArbitrary(-50, 50);
-            let y = getRandomArbitrary(-50, 50);
+            //magnitude is distance from center (vh)
+            let y = getRandomArbitrary(-magnitude, magnitude);
             let wh = getRandomArbitrary(1, 3);
             //use id from original array, this ensures a transition instead of rerendering a fresh array
-            newStarArray[i] = { x: x, y: y, wh: wh, id: starArray[i].id };
+            newStarArray[i] = { x: x, y: y, wh: wh, id: array[i].id };
         }
-        setStarArray(newStarArray);
+
+        return newStarArray;
     };
 
     return (
         <div className='particle-container'>
             {starArray.map((star) => {
+                return (
+                    <div
+                        className='particle'
+                        style={{
+                            transform: `translate(${star.x}vw, ${star.y}vh)`,
+                            width: `${star.wh}px`,
+                            height: `${star.wh}px`,
+                            cursor: `${star.wh}px`,
+                        }}
+                        onClick={() => console.log(`star!`)}
+                        key={star.id}
+                    ></div>
+                );
+            })}
+            {galaxyArray.map((star) => {
                 return (
                     <div
                         className='particle'

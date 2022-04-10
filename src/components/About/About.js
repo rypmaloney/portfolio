@@ -3,7 +3,8 @@ import me from '../../images/me.jpeg';
 import WelcomeTyping from './WelcomeTyping';
 import Tools from './Tools';
 
-const About = () => {
+const About = (props) => {
+    const setSelectedContent = props.setSelectedContent;
     return (
         <div className='about'>
             <div className='bio-wrapper'>
@@ -20,6 +21,9 @@ const About = () => {
                         supporting faculty. Strong interpersonal, communication,
                         and design skills.
                     </p>
+                    <a onClick={() => setSelectedContent('projects')}>
+                        See some of my projects.
+                    </a>
                     <div className='contact-wrapper'>
                         <div className='contact'>
                             <a href='https://www.linkedin.com/in/rypmaloney/'>

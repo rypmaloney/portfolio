@@ -33,14 +33,13 @@
 }
 
 .welcome {
-    width: 200px;
+    width: 140px;
 }
 
 .welcome h2 {
     overflow: hidden;
     position: relative;
     left: 0%;
-
     border-right: 0.15em solid orange; /* The typwriter cursor */
     white-space: nowrap;
     margin: 0 auto;

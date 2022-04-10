@@ -15,7 +15,12 @@ const Projects = () => {
             <div className='projects_container'>
                 <div className='project project_1'>
                     <div className='project_info'>
-                        <h2>Blog API and CMS</h2>
+                        <a
+                            href='https://github.com/rypmaloney/blog-cms'
+                            target='blank'
+                        >
+                            <h2>Blog API and CMS</h2>
+                        </a>
                         <p>
                             The core of the project is an API to fetch and
                             create blog posts. Part of a jamstack application
@@ -27,10 +32,16 @@ const Projects = () => {
                             JWT, CMS with React and Tailwind
                         </p>
                         <div className='project-btns'>
-                            <a href='https://rypmaloney.github.io/blog-cms'>
+                            <a
+                                href='https://rypmaloney.github.io/blog-cms'
+                                target='blank'
+                            >
                                 <button>Live Preivew</button>
                             </a>
-                            <a href='https://github.com/rypmaloney/blog-cms'>
+                            <a
+                                href='https://github.com/rypmaloney/blog-cms'
+                                target='blank'
+                            >
                                 <button>Repository</button>
                             </a>
                         </div>
@@ -40,7 +51,14 @@ const Projects = () => {
                 </div>
                 <div className='project project_2'>
                     <div className='project_info'>
-                        <h2>Wordle Unlimited</h2>
+                        <h2>
+                            <a
+                                href='https://rypmaloney.github.io/wordle-unlimited/'
+                                target='blank'
+                            >
+                                Wordle Unlimited
+                            </a>
+                        </h2>
                         <p>
                             This is a simple wordle clone using CRA and
                             tailwind. I used HeadlessUI for toggle and modal
@@ -50,10 +68,16 @@ const Projects = () => {
                             React, Tailwind, and HeadlessUI
                         </p>
                         <div className='project-btns'>
-                            <a href='https://rypmaloney.github.io/wordle-unlimited/'>
+                            <a
+                                href='https://rypmaloney.github.io/wordle-unlimited/'
+                                target='blank'
+                            >
                                 <button>Live Preivew</button>
                             </a>
-                            <a href='https://github.com/rypmaloney/wordle-unlimited'>
+                            <a
+                                href='https://github.com/rypmaloney/wordle-unlimited'
+                                target='blank'
+                            >
                                 <button>Repository</button>
                             </a>
                         </div>
@@ -64,7 +88,14 @@ const Projects = () => {
 
                 <div className='project project_3'>
                     <div className='project_info'>
-                        <h2>Private Forum</h2>
+                        <h2>
+                            <a
+                                href='https://github.com/rypmaloney/private-message-board'
+                                target='blank'
+                            >
+                                Private Forum
+                            </a>
+                        </h2>
                         <p>
                             This app is a small private forum where users can
                             create an account, log in, and upvote on posts
@@ -76,10 +107,16 @@ const Projects = () => {
                         </p>
 
                         <div className='project-btns'>
-                            <a href='https://private-forum.herokuapp.com/'>
+                            <a
+                                href='https://private-forum.herokuapp.com/'
+                                target='blank'
+                            >
                                 <button>Live Preivew *</button>
                             </a>
-                            <a href='https://github.com/rypmaloney/private-message-board'>
+                            <a
+                                href='https://github.com/rypmaloney/private-message-board'
+                                target='blank'
+                            >
                                 <button>Repository</button>
                             </a>
                         </div>
@@ -93,7 +130,14 @@ const Projects = () => {
                 </div>
                 <div className='project project_4'>
                     <div className='project_info'>
-                        <h2>Test Driven Battleship</h2>
+                        <h2>
+                            <a
+                                href='https://github.com/rypmaloney/battleship'
+                                target='blank'
+                            >
+                                Test Driven Battleship
+                            </a>
+                        </h2>
                         <p>
                             This project is a battleship game created through
                             test driven development (using Jest). I tried to
@@ -105,10 +149,16 @@ const Projects = () => {
                             Vanilla HTML, CSS, and JavaScript
                         </p>
                         <div className='project-btns'>
-                            <a href='https://htmlpreview.github.io/?https://github.com/rypmaloney/battleship/blob/d7692551195a415232b57179286f1f455607c69c/dist/index.html'>
+                            <a
+                                href='https://htmlpreview.github.io/?https://github.com/rypmaloney/battleship/blob/d7692551195a415232b57179286f1f455607c69c/dist/index.html'
+                                target='blank'
+                            >
                                 <button>Live Preivew</button>
                             </a>
-                            <a href='https://github.com/rypmaloney/battleship'>
+                            <a
+                                href='https://github.com/rypmaloney/battleship'
+                                target='blank'
+                            >
                                 <button>Repository</button>
                             </a>
                         </div>
