@@ -10,7 +10,7 @@ const StarField = (props) => {
     //set the intial star array. Position based on height of page.
     useEffect(() => {
         let startingStarArray = createStarArray(300, 50);
-        let startingGalaxyArray = createStarArray(400, 8);
+        let startingGalaxyArray = createStarArray(400, 15);
         setStarArray(startingStarArray);
         setGalaxyArray(startingGalaxyArray);
     }, []);
@@ -20,7 +20,7 @@ const StarField = (props) => {
         if (starArray.length > 1) {
             let movedStarArray = moveStarArray(starArray, 50);
             setStarArray(movedStarArray);
-            let movedGalaxyArray = moveStarArray(galaxyArray, 8);
+            let movedGalaxyArray = moveStarArray(galaxyArray, 15);
             setGalaxyArray(movedGalaxyArray);
         }
         //change star arrays anytime the focused content section changes
