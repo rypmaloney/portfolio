@@ -16,15 +16,20 @@ const StarField = (props) => {
     }, []);
 
     //Everytime the main content changes move the array and transition
-    useEffect(() => {
-        if (starArray.length > 1) {
-            let movedStarArray = moveStarArray(starArray, 50);
-            setStarArray(movedStarArray);
-            let movedGalaxyArray = moveStarArray(galaxyArray, 15);
-            setGalaxyArray(movedGalaxyArray);
-        }
-        //change star arrays anytime the focused content section changes
-    }, [props.selectedContent]);
+    useEffect(
+        () => {
+            if (starArray.length > 1) {
+                let movedStarArray = moveStarArray(starArray, 50);
+                setStarArray(movedStarArray);
+                let movedGalaxyArray = moveStarArray(galaxyArray, 15);
+                setGalaxyArray(movedGalaxyArray);
+            }
+            //change star arrays anytime the focused content section changes
+        },
+        [
+            //props.selectedContent
+        ]
+    );
 
     function getRandomArbitrary(min, max) {
         let num = Math.random() * (max - min) + min;
