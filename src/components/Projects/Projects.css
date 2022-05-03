@@ -4,15 +4,15 @@
     align-content: center;
     justify-content: center;
     margin: auto;
-    animation-duration: 2s;
+    /* animation-duration: 2s;
     animation-delay: 0s;
     animation-name: slideInFromRight;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
 }
 
 .projects_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -28,6 +28,9 @@
     margin: 10px;
     min-height: 330px;
     padding: 15px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    width: auto;
 }
 .project-tools {
     color: rgb(180, 185, 211);
@@ -45,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .image_carousel {
@@ -56,8 +59,8 @@
 }
 
 .image_carousel img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
     cursor: pointer;
 }
 
@@ -82,6 +85,33 @@
     color: azure;
 }
 
+@media only screen and (max-width: 990px) {
+    .image_carousel img {
+        max-width: 375px;
+        max-height: 375px;
+    }
+    .project {
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 15px 15px;
+        margin: 20px 0;
+        max-width: 600px;
+    }
+    .image_carousel img {
+        max-width: 325px;
+        max-width: 325px;
+    }
+    .image_carousel_wrapper {
+        margin-bottom: 30px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .project {
         display: flex;
@@ -99,6 +129,7 @@
         max-width: 300px;
     }
     .image_carousel img {
+        max-width: 240px;
         max-width: 240px;
     }
 }

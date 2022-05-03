@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slideInFromRight;
     animation-iteration-count: 1;
 }

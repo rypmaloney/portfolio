@@ -6,7 +6,7 @@
     min-height: 100%;
     margin: auto;
     animation-duration: 2s;
-    animation-name: slideInFromRight;
+    animation-name: slideInFromLeft;
     animation-iteration-count: 1;
 }
 

@@ -28,8 +28,9 @@ const Projects = () => {
                             posts.
                         </p>
                         <p class='project-tools'>
-                            API with Node.JS and Express, authenticates with
-                            JWT, CMS with React and Tailwind
+                            API with Node.JS, Express, and
+                            MongoDB--authenticates with JWT, CMS with React and
+                            Tailwind
                         </p>
                         <div className='project-btns'>
                             <a
@@ -60,12 +61,13 @@ const Projects = () => {
                             </a>
                         </h2>
                         <p>
-                            This is a simple wordle clone using CRA and
-                            tailwind. I used HeadlessUI for toggle and modal
-                            components.
+                            This is a simple wordle clone using CRA and Tailwind
+                            and HeadlesUI. Runs off an Express API and grows a
+                            Postgres database.
                         </p>
                         <p class='project-tools'>
-                            React, Tailwind, and HeadlessUI
+                            React, Tailwind, HeadlessUI, NodeJS, Express,
+                            Postgres
                         </p>
                         <div className='project-btns'>
                             <a

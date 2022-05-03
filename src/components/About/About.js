@@ -14,13 +14,20 @@ const About = (props) => {
                 <div className='bio'>
                     <WelcomeTyping />
                     <p>
-                        Highly motivated publishing professional with interest
-                        in technical communications and front-end web
-                        development. Professional experience in web management
-                        and design, supervising peer review and publication, and
-                        supporting faculty. Strong interpersonal, communication,
-                        and design skills.
+                        I currently work as a Product Manager at Fishtank
+                        Learning. I have a background in scholarly
+                        communicaitons and publishing, and particular interest
+                        in technical communications and fullstack web
+                        development. I have professional experience in web
+                        management and design, supervising peer review and
+                        publication, and project management.
                     </p>
+                    <p>
+                        I am forever attempting to supplement my strong
+                        interpersonal, communication, and design skills with
+                        technical knowhow.
+                    </p>
+
                     <a onClick={() => setSelectedContent('projects')}>
                         See some of my projects.
                     </a>

@@ -9,8 +9,8 @@ const StarField = (props) => {
 
     //set the intial star array. Position based on height of page.
     useEffect(() => {
-        let startingStarArray = createStarArray(300, 50);
-        let startingGalaxyArray = createStarArray(400, 15);
+        let startingStarArray = createStarArray(100, 50);
+        let startingGalaxyArray = createStarArray(150, 15);
         setStarArray(startingStarArray);
         setGalaxyArray(startingGalaxyArray);
     }, []);
