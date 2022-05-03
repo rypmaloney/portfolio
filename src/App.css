@@ -43,6 +43,10 @@ h1 {
     font-size: 6rem;
     margin-bottom: 0;
 }
+h2 {
+    font-size: 1.9rem;
+    font-weight: 300;
+}
 
 a {
     color: #e57a44;
