@@ -27,7 +27,7 @@ const StarField = (props) => {
             //change star arrays anytime the focused content section changes
         },
         [
-            //props.selectedContent
+            //props.selectedContent to set starfield effect
         ]
     );
 
@@ -43,7 +43,7 @@ const StarField = (props) => {
             let x = getRandomArbitrary(-50, 50);
             //magnitude is distance from center (vh)
             let y = getRandomArbitrary(-magnitude, magnitude);
-            let wh = getRandomArbitrary(1, 3);
+            let wh = getRandomArbitrary(1, 5);
             //Set intial with id
             starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
         }
@@ -57,7 +57,7 @@ const StarField = (props) => {
             let x = getRandomArbitrary(-50, 50);
             //magnitude is distance from center (vh)
             let y = getRandomArbitrary(-magnitude, magnitude);
-            let wh = getRandomArbitrary(1, 3);
+            let wh = getRandomArbitrary(1, 5);
             //use id from original array, this ensures a transition instead of rerendering a fresh array
             newStarArray[i] = { x: x, y: y, wh: wh, id: array[i].id };
         }

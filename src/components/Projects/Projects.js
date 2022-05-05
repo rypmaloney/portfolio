@@ -15,6 +15,44 @@ const Projects = () => {
             <div className='projects_container'>
                 <div className='project project_1'>
                     <div className='project_info'>
+                        <h2>
+                            <a
+                                href='https://rypmaloney.github.io/wordle-unlimited/'
+                                target='blank'
+                            >
+                                Wordle Unlimited
+                            </a>
+                        </h2>
+                        <p>
+                            This is a Wordle clone using CRA and Tailwind and
+                            HeadlesUI. Runs off an Express API and grows a
+                            Postgres database. Word list is dynamically updated
+                            based on common user guesses.
+                        </p>
+                        <p class='project-tools'>
+                            React, Tailwind, HeadlessUI, NodeJS, Express,
+                            Postgres
+                        </p>
+                        <div className='project-btns'>
+                            <a
+                                href='https://rypmaloney.github.io/wordle-unlimited/'
+                                target='blank'
+                            >
+                                <button>Live Preivew</button>
+                            </a>
+                            <a
+                                href='https://github.com/rypmaloney/wordle-unlimited'
+                                target='blank'
+                            >
+                                <button>Repository</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <ImageCarousel imgOne={WORDLE_dark} imgTwo={WORDLE_light} />
+                </div>
+                <div className='project project_2'>
+                    <div className='project_info'>
                         <a
                             href='https://github.com/rypmaloney/blog-cms'
                             target='blank'
@@ -49,43 +87,6 @@ const Projects = () => {
                     </div>
 
                     <ImageCarousel imgOne={CMS_login} imgTwo={CMS_update} />
-                </div>
-                <div className='project project_2'>
-                    <div className='project_info'>
-                        <h2>
-                            <a
-                                href='https://rypmaloney.github.io/wordle-unlimited/'
-                                target='blank'
-                            >
-                                Wordle Unlimited
-                            </a>
-                        </h2>
-                        <p>
-                            This is a simple wordle clone using CRA and Tailwind
-                            and HeadlesUI. Runs off an Express API and grows a
-                            Postgres database.
-                        </p>
-                        <p class='project-tools'>
-                            React, Tailwind, HeadlessUI, NodeJS, Express,
-                            Postgres
-                        </p>
-                        <div className='project-btns'>
-                            <a
-                                href='https://rypmaloney.github.io/wordle-unlimited/'
-                                target='blank'
-                            >
-                                <button>Live Preivew</button>
-                            </a>
-                            <a
-                                href='https://github.com/rypmaloney/wordle-unlimited'
-                                target='blank'
-                            >
-                                <button>Repository</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <ImageCarousel imgOne={WORDLE_dark} imgTwo={WORDLE_light} />
                 </div>
 
                 <div className='project project_3'>
