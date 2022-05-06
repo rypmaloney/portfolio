@@ -22,22 +22,32 @@ const Resume = (props) => {
             institution: 'Fishtank Learning',
             id: 'FT21',
             year: '2021-Present',
-            details:
-                'Manages the development of new website features and resources for the Fishtank Learning website. Identifies product improvements and plans out, executes, and oversees related projects. Plans and oversee changes to both the back end and front end of the Fishtank Learning website. Coordinates the development team through Jira.',
+            details: [
+                'Manages the development of new website features and resources for the Fishtank Learning website.',
+                'Identifies product improvements and plans out, executes, and oversees related projects.',
+                'Plans and oversees changes to both the back end and front end of the Fishtank Learning website.',
+                'Coordinates the development team through Jira.',
+            ],
         },
         {
             institution: 'CMSA, Harvard University',
             id: 'CMSA17',
             year: '2017-2021',
-            details:
-                'Coordinates web presence on multiple sites, producing general content and design. Assists editor-in-chief, and coordinates production process of all Center publications. Produces digital and print content for a variety of stakeholders, including donors, faculty, and staff. Films, produces, and edits promotional interviews with visitors, postdocs, and faculty',
+            details: [
+                'Coordinates web presence on multiple sites, producing general content and design.',
+                'Assists editor-in-chief, and coordinates production process of all Center publications.',
+                'Produces digital and print content for a variety of stakeholders, including donors, faculty, and staff.',
+                'Films, produces, and edits promotional interviews with visitors, postdocs, and faculty',
+            ],
         },
         {
             institution: 'UMass, Office of Scholarly Communications',
             year: '2015-2016',
             id: 'UMA15',
-            details:
-                'Worked on grant proposal process and implementation of  the Outernet Project, providing open access educational materials to internet poor communities. Oversaw the migration of UMass Center for International Education to the repository.',
+            details: [
+                'Worked on grant proposal process and implementation of the Outernet Project, providing open access educational materials to internet poor communities.',
+                'Oversaw the migration of UMass Center for International Education to the repository.',
+            ],
         },
     ]);
 

@@ -8,8 +8,11 @@ const Experience = (props) => {
                     <h3>{props.experience.institution}</h3>
                     <p>{props.experience.year}</p>
                 </div>
-
-                <p>{props.experience.details}</p>
+                <ul>
+                    {props.experience.details.map((detail) => {
+                        return <li>{detail}</li>;
+                    })}
+                </ul>
             </div>
         </div>
     );

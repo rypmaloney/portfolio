@@ -74,6 +74,13 @@
     margin-right: auto;
 }
 
+.display ul {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
 @media only screen and (max-width: 750px) {
     .institution {
         margin: 5px 0 0 4px;
