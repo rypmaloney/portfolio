@@ -17,7 +17,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: #382831;
+    background-color: var(--secondary-color);
     border-bottom: 2px solid rgb(103, 133, 161);
     border-radius: 5px;
     padding: 25px;
@@ -40,7 +40,7 @@
     overflow: hidden;
     position: relative;
     left: 0%;
-    border-right: 0.15em solid orange; /* The typwriter cursor */
+    border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
@@ -75,7 +75,7 @@
         border-color: transparent;
     }
     50% {
-        border-color: orange;
+        border-color: var(--primary-color);
     }
 }
 

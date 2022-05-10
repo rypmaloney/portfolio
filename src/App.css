@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Raleway:wght@300;500&family=Roboto:wght@100&display=swap');
-html {
-    height: 100%;
+
+:root {
+    --primary-color: #e57a44;
+    --secondary-color: #382831;
 }
 
 body {
@@ -33,13 +35,13 @@ h3,
 h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: #e57a44;
+    color: var(--primary-color);
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    color: #e57a44;
+    color: var(--primary-color);
     font-size: 6rem;
     margin-bottom: 0;
 }
@@ -49,7 +51,7 @@ h2 {
 }
 
 a {
-    color: #e57a44;
+    color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
 }

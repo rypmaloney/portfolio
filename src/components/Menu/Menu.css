@@ -34,7 +34,7 @@
     z-index: 4;
 }
 .menu a:hover {
-    background-color: #382831;
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -43,5 +43,5 @@
 }
 
 .selected {
-    border-bottom: 1px solid #e57a44;
+    border-bottom: 1px solid var(--primary-color);
 }

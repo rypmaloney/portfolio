@@ -23,7 +23,7 @@
     flex-direction: row;
     border-radius: 5px;
     box-shadow: 5px 2px 30px #141314;
-    background-color: #382831de;
+    background-color: var(--secondary-color);
     border-bottom: 2px solid rgb(103, 133, 161);
     margin: 10px;
     min-height: 330px;
