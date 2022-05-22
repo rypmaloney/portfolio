@@ -19,10 +19,10 @@ const ImageCarousel = (props) => {
         <div className='img_carousel_wrapper'>
             <div className='image_carousel'>
                 <div className={imgOneClass} onClick={switchImg}>
-                    <img src={imgOne}></img>
+                    <img src={imgOne.img} alt={imgOne.alt}></img>
                 </div>
                 <div className={imgTwoClass} onClick={switchImg}>
-                    <img src={imgTwo}></img>
+                    <img src={imgTwo.img} alt={imgTwo.alt}></img>
                 </div>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import './About.css';
 import me from '../../images/me.jpeg';
 import WelcomeTyping from './WelcomeTyping';
-import Tools from './Tools';
 
 const About = (props) => {
     const setSelectedContent = props.setSelectedContent;
@@ -9,7 +8,11 @@ const About = (props) => {
         <div className='about'>
             <div className='bio-wrapper'>
                 <div className='img-wrapper'>
-                    <img className='me' src={me}></img>
+                    <img
+                        className='me'
+                        src={me}
+                        alt='Headshot for Ryan Maloney'
+                    ></img>
                 </div>
                 <div className='bio'>
                     <WelcomeTyping />

@@ -49,7 +49,16 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <ImageCarousel imgOne={WORDLE_dark} imgTwo={WORDLE_light} />
+                    <ImageCarousel
+                        imgOne={{
+                            img: WORDLE_dark,
+                            alt: 'Wordle game in light mode.',
+                        }}
+                        imgTwo={{
+                            img: WORDLE_light,
+                            alt: 'Wordle unlimited in light mode',
+                        }}
+                    />
                 </div>
                 <div className='project project_2'>
                     <div className='project_info'>
@@ -86,7 +95,13 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <ImageCarousel imgOne={CMS_login} imgTwo={CMS_update} />
+                    <ImageCarousel
+                        imgOne={{ img: CMS_login, alt: 'Login screen for CMS' }}
+                        imgTwo={{
+                            img: CMS_update,
+                            alt: 'Update post page for CMS',
+                        }}
+                    />
                 </div>
 
                 <div className='project project_3'>
@@ -129,7 +144,13 @@ const Projects = () => {
                         </p>
                     </div>
 
-                    <ImageCarousel imgOne={PF_board} imgTwo={PF_post} />
+                    <ImageCarousel
+                        imgOne={{
+                            img: PF_board,
+                            alt: 'Private forum post board',
+                        }}
+                        imgTwo={{ img: PF_post, alt: 'Individual post' }}
+                    />
                 </div>
                 <div className='project project_4'>
                     <div className='project_info'>
@@ -167,7 +188,10 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <ImageCarousel imgOne={BS_game} imgTwo={BS_place} />
+                    <ImageCarousel
+                        imgOne={{ img: BS_game, alt: 'Battleship game' }}
+                        imgTwo={{ img: BS_place, alt: 'Placing ships' }}
+                    />
                 </div>
             </div>
         </div>
