@@ -19,16 +19,16 @@ const About = (props) => {
                     <p>
                         I currently work as a Product Manager at Fishtank
                         Learning. I have a background in scholarly
-                        communicaitons and publishing, and particular interest
-                        in technical communications and fullstack web
-                        development. I have professional experience in web
-                        management and design, supervising peer review and
-                        publication, and project management.
+                        communicaitons and publishing, and I'm interested in
+                        technical communications and fullstack web development.
+                        I have professional experience in web management and
+                        design, supervising peer review and publication, and
+                        project management.
                     </p>
                     <p>
                         I am forever attempting to supplement my strong
-                        interpersonal, communication, and design skills with
-                        technical knowhow.
+                        communication, project management, and design skills
+                        with technical knowhow.
                     </p>
 
                     <a onClick={() => setSelectedContent('projects')}>

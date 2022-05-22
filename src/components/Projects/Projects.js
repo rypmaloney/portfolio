@@ -52,7 +52,7 @@ const Projects = () => {
                     <ImageCarousel
                         imgOne={{
                             img: WORDLE_dark,
-                            alt: 'Wordle game in light mode.',
+                            alt: 'Wordle game in dark mode.',
                         }}
                         imgTwo={{
                             img: WORDLE_light,
