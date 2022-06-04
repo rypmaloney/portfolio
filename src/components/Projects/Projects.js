@@ -8,11 +8,60 @@ import WORDLE_dark from '../../images/WORDLE_dark.png';
 import WORDLE_light from '../../images/WORDLE_light.png';
 import BS_game from '../../images/BS_game.png';
 import BS_place from '../../images/BS_place.png';
+import grouper_full from '../../images/grouper_full.png';
+import grouper_close from '../../images/grouper_close.png';
 
 const Projects = () => {
     return (
         <div className='projects'>
             <div className='projects_container'>
+                <div className='project project_0'>
+                    <div className='project_info'>
+                        <h2>
+                            <a
+                                href='https://rypmaloney.github.io/wordle-unlimited/'
+                                target='blank'
+                            >
+                                Grouper
+                            </a>
+                        </h2>
+                        <p>
+                            Generate groups of poeple with a minimum number of
+                            repeat group compositions. Grouper identifies the
+                            number of times each pair of individuals has been
+                            grouped together, and attempts to create groups with
+                            the lowest number of previously paired individuals.
+                        </p>
+                        <p class='project-tools'>
+                            React, SASS, and tests with Jest
+                        </p>
+                        <div className='project-btns'>
+                            <a
+                                href='https://grouper-generator.netlify.app/'
+                                target='blank'
+                            >
+                                <button>Live Preivew</button>
+                            </a>
+                            <a
+                                href='https://github.com/rypmaloney/group-generator'
+                                target='blank'
+                            >
+                                <button>Repository</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <ImageCarousel
+                        imgOne={{
+                            img: grouper_full,
+                            alt: 'Full grouper app.',
+                        }}
+                        imgTwo={{
+                            img: grouper_close,
+                            alt: 'close-up grouper app.',
+                        }}
+                    />
+                </div>
                 <div className='project project_1'>
                     <div className='project_info'>
                         <h2>
@@ -24,10 +73,10 @@ const Projects = () => {
                             </a>
                         </h2>
                         <p>
-                            This is a Wordle clone using CRA and Tailwind and
-                            HeadlesUI. Runs off an Express API and grows a
-                            Postgres database. Word list is dynamically updated
-                            based on common user guesses.
+                            A Wordle clone using CRA and Tailwind and HeadlesUI.
+                            Runs off an Express API and grows a Postgres
+                            database. Word list is dynamically updated based on
+                            common user guesses.
                         </p>
                         <p class='project-tools'>
                             React, Tailwind, HeadlessUI, NodeJS, Express,
@@ -69,7 +118,7 @@ const Projects = () => {
                             <h2>Blog API and CMS</h2>
                         </a>
                         <p>
-                            The core of the project is an API to fetch and
+                            The core of this project is an API to fetch and
                             create blog posts. Part of a jamstack application
                             made up of a CMS, the API, and a frontend to display
                             posts.
