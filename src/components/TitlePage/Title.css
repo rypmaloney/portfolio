@@ -9,7 +9,8 @@
     overflow: hidden;
     justify-content: center;
     opacity: 1;
-    transition: all 3s;
+    transition-duration:  2s; 
+
 }
 .header-hidden {
     height: 0 !important;
