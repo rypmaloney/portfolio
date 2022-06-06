@@ -26,7 +26,7 @@ const Projects = () => {
                             </a>
                         </h2>
                         <p>
-                            Generate groups of poeple with a minimum number of
+                            Generate groups of people with a minimum number of
                             repeat group compositions. Grouper identifies the
                             number of times each pair of individuals has been
                             grouped together, and attempts to create groups with
