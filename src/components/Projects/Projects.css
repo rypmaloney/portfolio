@@ -4,11 +4,9 @@
     align-content: center;
     justify-content: center;
     margin: auto;
-    /* animation-duration: 2s;
-    animation-delay: 0s;
-    animation-name: slideInFromRight;
-    animation-iteration-count: 1; */
-}
+    animation-name: enterFromBottom;
+    animation-duration: 1s;
+} 
 
 .projects_container {
     display: flex;

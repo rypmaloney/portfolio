@@ -96,6 +96,14 @@ button:hover {
         transform: scaleY(0%);
     }
 }
+@keyframes enterFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {

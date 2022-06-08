@@ -5,9 +5,13 @@
     justify-content: center;
     min-height: 100%;
     margin: auto;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slideInFromLeft;
     animation-iteration-count: 1;
+}
+
+.content{
+   animation-name: enterFromBottom;
 }
 
 .bio-wrapper {

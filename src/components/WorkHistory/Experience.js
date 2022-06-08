@@ -1,4 +1,5 @@
 import React from 'react';
+import uniqid from 'uniqid';
 
 const Experience = (props) => {
     return (
@@ -10,7 +11,7 @@ const Experience = (props) => {
                 </div>
                 <ul>
                     {props.experience.details.map((detail) => {
-                        return <li>{detail}</li>;
+                        return <li key={uniqid()}>{detail}</li>;
                     })}
                 </ul>
             </div>

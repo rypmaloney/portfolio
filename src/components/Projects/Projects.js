@@ -32,7 +32,7 @@ const Projects = () => {
                             grouped together, and attempts to create groups with
                             the lowest number of previously paired individuals.
                         </p>
-                        <p class='project-tools'>
+                        <p className='project-tools'>
                             React, SASS, and tests with Jest
                         </p>
                         <div className='project-btns'>
@@ -78,7 +78,7 @@ const Projects = () => {
                             database. Word list is dynamically updated based on
                             common user guesses.
                         </p>
-                        <p class='project-tools'>
+                        <p className='project-tools'>
                             React, Tailwind, HeadlessUI, NodeJS, Express,
                             Postgres
                         </p>
@@ -123,7 +123,7 @@ const Projects = () => {
                             made up of a CMS, the API, and a frontend to display
                             posts.
                         </p>
-                        <p class='project-tools'>
+                        <p className='project-tools'>
                             API with Node.JS, Express, and
                             MongoDB--authenticates with JWT, CMS with React and
                             Tailwind
@@ -168,7 +168,7 @@ const Projects = () => {
                             create an account, log in, and upvote on posts
                             (without refreshing the page).
                         </p>
-                        <p class='project-tools'>
+                        <p className='project-tools'>
                             Node.JS, Express, and EJS. Passport/bycript for
                             authenticated user sessions
                         </p>
@@ -218,7 +218,7 @@ const Projects = () => {
                             all of my functions before creating them.
                         </p>
 
-                        <p class='project-tools'>
+                        <p className='project-tools'>
                             Vanilla HTML, CSS, and JavaScript
                         </p>
                         <div className='project-btns'>
