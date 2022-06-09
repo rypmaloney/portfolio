@@ -6,27 +6,27 @@ import './MainContent.css';
 import StarField from './StarField/StarField';
 
 const MainContent = (props) => {
-    if (props.selectedContent === 'projects') {
-        return (
-            <div className='content'>
-                <Projects />
-            </div>
-        );
-    } else if (props.selectedContent === 'about') {
-        return (
-            <div className='content'>
-                <About setSelectedContent={props.setSelectedContent} />
-            </div>
-        );
-    } else if (props.selectedContent === 'experience') {
-        return (
-            <div className='content'>
-                <WorkHistory />
-            </div>
-        );
-    } else {
-        return <div className=''></div>;
-    }
+  if (props.selectedContent === 'projects') {
+    return (
+      <div className="content">
+        <Projects />
+      </div>
+    );
+  } else if (props.selectedContent === 'about') {
+    return (
+      <div className="content">
+        <About setSelectedContent={props.setSelectedContent} />
+      </div>
+    );
+  } else if (props.selectedContent === 'experience') {
+    return (
+      <div className="content">
+        <WorkHistory />
+      </div>
+    );
+  } else {
+    return <div className=""></div>;
+  }
 };
 
 export default MainContent;

@@ -1,132 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Raleway:wght@300;500&family=Roboto:wght@100&display=swap');
 
 :root {
-    --primary-color: #e57a44;
-    --secondary-color: #382831;
+  --primary-color: #e57a44;
+  --secondary-color: #382831;
 }
 
 body {
-    min-height: 100%; /* make sure it is at least as tall as the viewport */
-    position: relative;
-    background: linear-gradient(
-            to bottom,
-            #06070c,
-            #151625,
-            #2a2c43,
-            #36384b,
-            #2a2c43,
-            #181929,
-            #05060a
-        )
-        fixed;
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      #06070c,
+      #151625,
+      #2a2c43,
+      #36384b,
+      #2a2c43,
+      #181929,
+      #05060a
+    )
+    fixed;
 }
 .app {
-    height: 100%;
+  height: 100%;
 }
 
 p {
-    font-family: 'Nunito Sans', sans-serif;
-    color: rgb(250, 250, 250);
-    font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(250, 250, 250);
+  font-size: 1rem;
 }
 
 h2,
 h3,
 h4 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: var(--primary-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: var(--primary-color);
-    font-size: 6rem;
-    margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: var(--primary-color);
+  font-size: 6rem;
+  margin-bottom: 0;
 }
 h2 {
-    font-size: 1.9rem;
-    font-weight: 300;
+  font-size: 1.9rem;
+  font-weight: 300;
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+a:hover{
+    color: white;
 }
 
 button {
-    padding: 5px;
-    margin: 5px;
-    background-color: #21233a;
-    color: rgb(170, 190, 209);
-    cursor: pointer;
-    border: 1px solid #2a2c43;
-    border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #21233a;
+  color: rgb(170, 190, 209);
+  cursor: pointer;
+  border: 1px solid #2a2c43;
+  border-radius: 3px;
 }
 button:hover {
-    background-color: #0a0e38;
-    color: rgb(255, 255, 255);
+  background-color: #0a0e38;
+  color: rgb(255, 255, 255);
 }
 
 @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInFromRight {
-    0% {
-        transform: translateX(200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes leaveToTop {
-    0% {
-        transform: scaleY(100%);
-    }
-    100% {
-        transform: scaleY(0%);
-    }
+  0% {
+    transform: scaleY(100%);
+  }
+  100% {
+    transform: scaleY(0%);
+  }
 }
 @keyframes enterFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-    .about,
-    .projects,
-    .WorkHistory-wrapper {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
+  .about,
+  .projects,
+  .content,
+  .display,
+  .WorkHistory-wrapper {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
 }

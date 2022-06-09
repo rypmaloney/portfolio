@@ -1,133 +1,133 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin: auto;
-    animation-name: enterFromBottom;
-    animation-duration: 1s;
-} 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: enterFromBottom;
+  animation-duration: 1s;
+}
 
 .projects_container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .project {
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    box-shadow: 5px 2px 30px #141314;
-    background-color: var(--secondary-color);
-    border-bottom: 2px solid rgb(103, 133, 161);
-    margin: 10px;
-    min-height: 330px;
-    padding: 15px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-    width: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: 5px 2px 30px #141314;
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid rgb(103, 133, 161);
+  margin: 10px;
+  min-height: 330px;
+  padding: 15px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+  width: auto;
 }
 .project-tools {
-    color: rgb(180, 185, 211);
-    font-size: 0.8rem;
+  color: rgb(180, 185, 211);
+  font-size: 0.8rem;
 }
 
 .img_carousel_wrapper {
-    width: 340px;
-    height: 200px;
-    margin-left: 30px;
-    margin-top: 30px;
+  width: 340px;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .project_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
 }
 
 .image_carousel {
-    margin-left: -20px;
-    position: relative;
-    top: 0;
-    left: 0;
+  margin-left: -20px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .image_carousel img {
-    max-width: 500px;
-    max-height: 500px;
-    cursor: pointer;
+  max-width: 500px;
+  max-height: 500px;
+  cursor: pointer;
 }
 
 .img_fore,
 .img_back {
-    position: absolute;
+  position: absolute;
 }
 
 .img_fore {
-    z-index: 1;
-    top: 30px;
-    left: 0;
+  z-index: 1;
+  top: 30px;
+  left: 0;
 }
 
 .img_back {
-    z-index: 0;
-    left: 40px;
+  z-index: 0;
+  left: 40px;
 }
 
 .note {
-    font-size: 0.5em;
-    color: azure;
+  font-size: 0.5em;
+  color: azure;
 }
 
 @media only screen and (max-width: 990px) {
-    .image_carousel img {
-        max-width: 375px;
-        max-height: 375px;
-    }
-    .project {
-        padding-right: 100px;
-    }
+  .image_carousel img {
+    max-width: 375px;
+    max-height: 375px;
+  }
+  .project {
+    padding-right: 100px;
+  }
 }
 
 @media only screen and (max-width: 870px) {
-    .project {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 15px 15px;
-        margin: 20px 0;
-        max-width: 600px;
-    }
-    .image_carousel img {
-        max-width: 325px;
-        max-width: 325px;
-    }
-    .image_carousel_wrapper {
-        margin-bottom: 30px;
-    }
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px 15px;
+    margin: 20px 0;
+    max-width: 600px;
+  }
+  .image_carousel img {
+    max-width: 325px;
+    max-width: 325px;
+  }
+  .image_carousel_wrapper {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-    .project {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 15px 15px;
-        margin: 20px 0;
-        max-width: 300px;
-    }
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px 15px;
+    margin: 20px 0;
+    max-width: 300px;
+  }
 
-    .image_carousel {
-        margin-left: -20px;
-    }
+  .image_carousel {
+    margin-left: -20px;
+  }
 
-    .img_carousel_wrapper {
-        max-width: 300px;
-    }
-    .image_carousel img {
-        max-width: 240px;
-        max-width: 240px;
-    }
+  .img_carousel_wrapper {
+    max-width: 300px;
+  }
+  .image_carousel img {
+    max-width: 240px;
+    max-width: 240px;
+  }
 }

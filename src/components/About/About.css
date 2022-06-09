@@ -1,94 +1,95 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    min-height: 100%;
-    margin: auto;
-    animation-duration: 1s;
-    animation-name: slideInFromLeft;
-    animation-iteration-count: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: auto;
+  animation-duration: 1s;
+  animation-name: slideInFromLeft;
+  animation-iteration-count: 1;
 }
 
-.content{
-   animation-name: enterFromBottom;
+.content {
+  animation-name: enterFromBottom;
 }
 
 .bio-wrapper {
-    display: flex;
-    flex-direction: row;
-    max-width: 800px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    border-bottom: 2px solid rgb(103, 133, 161);
-    border-radius: 5px;
-    padding: 25px;
-    margin: 5px;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid rgb(103, 133, 161);
+  border-radius: 5px;
+  padding: 25px;
+  margin: 5px;
 }
 
 .me {
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    padding-right: 20px;
-    margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  padding-right: 20px;
+  margin: auto;
 }
 
 .welcome {
-    width: 200px;
+  width: 200px;
 }
 
 .welcome h2 {
-    overflow: hidden;
-    position: relative;
-    left: 0%;
-    border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 1.5s;
+  overflow: hidden;
+  position: relative;
+  left: 0%;
+  border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 2.5s steps(15, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 1.5s;
+  padding: 20px 0 10px 0 ;
 }
 .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
 }
 .contact {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-        visibility: visible;
-    }
+  from {
+    width: 0;
+    visibility: visible;
+  }
 
-    to {
-        width: 100%;
-        opacity: 100%;
-        visibility: visible;
-    }
+  to {
+    width: 100%;
+    opacity: 100%;
+    visibility: visible;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: var(--primary-color);
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .bio-wrapper {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .about h2 {
-        text-align: center;
-    }
+  .bio-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .about h2 {
+    text-align: center;
+  }
 }
