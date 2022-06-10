@@ -118,7 +118,8 @@ button:hover {
 @media only screen and (max-width: 768px) {
     .about,
     .projects,
-    .WorkHistory-wrapper {
+    .WorkHistory-wrapper,
+    .content {
         /*CSS transitions*/
         -o-transition-property: none !important;
         -moz-transition-property: none !important;
