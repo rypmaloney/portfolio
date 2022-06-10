@@ -80,8 +80,23 @@
   margin: 0;
   font-weight: 300;
 }
+embed {
+    width:750px;
+    height:1025px;
+    z-index: 10;
+    animation-duration: 1s;
+    animation-name: slideInFromRight;
+    animation-iteration-count: 1;
+}
+
 
 @media only screen and (max-width: 750px) {
+embed{
+    width:400px;
+    height:525px;
+
+
+}
   .institution {
     margin: 5px 0 0 4px;
   }
