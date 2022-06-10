@@ -5,10 +5,15 @@ import pdf from '../../images/Resume_2022.pdf';
 const WorkHistory = () => {
   return (
     <div className="WorkHistory-wrapper">
-      {/* <div className="display">
-        <Resume />
-      </div> */}
-      <embed src={pdf} type="application/pdf"></embed>
+      <object data={pdf} type="application/pdf">
+        <div className="display">
+          <Resume />
+        </div>
+        <p>
+          Your web browser doesn't have a PDF plugin. Instead you can{' '}
+          <a href={pdf}>click here to download the PDF file.</a>
+        </p>
+      </object>
     </div>
   );
 };
