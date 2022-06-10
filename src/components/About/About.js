@@ -1,5 +1,5 @@
 import './About.css';
-import me from '../../images/me.jpeg';
+import me from '../../images/me.jpg';
 import WelcomeTyping from './WelcomeTyping';
 
 const About = (props) => {

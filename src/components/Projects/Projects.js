@@ -4,12 +4,12 @@ import CMS_login from '../../images/CMS_login.png';
 import CMS_update from '../../images/CMS_update.png';
 import PF_board from '../../images/PF_board.png';
 import PF_post from '../../images/PF_post.png';
-import WORDLE_dark from '../../images/WORDLE_dark.png';
-import WORDLE_light from '../../images/WORDLE_light.png';
+import WORDLE_dark from '../../images/WORDLE_dark.jpg';
+import WORDLE_light from '../../images/WORDLE_light.jpg';
 import BS_game from '../../images/BS_game.png';
 import BS_place from '../../images/BS_place.png';
 import grouper_full from '../../images/grouper_full.jpg';
-import grouper_close from '../../images/grouper_close.png';
+import grouper_close from '../../images/grouper_close.jpg';
 
 const Projects = () => {
   return (
