@@ -87,9 +87,7 @@ object {
     height: 1025px;
     z-index: 10;
     box-shadow: 10px 15px 25px rgb(29, 28, 28);
-    animation-duration: 1s;
-    animation-name: slideInFromRight;
-    animation-iteration-count: 1;
+
 }
 
 
