@@ -120,7 +120,7 @@ button:hover {
     .about,
     .projects,
     .WorkHistory-wrapper,
-    .content {
+    .content, object {
         /*CSS transitions*/
         -o-transition-property: none !important;
         -moz-transition-property: none !important;
