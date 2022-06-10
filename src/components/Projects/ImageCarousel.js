@@ -18,7 +18,7 @@ const ImageCarousel = (props) => {
           <img src={imgOne.img} alt={imgOne.alt}></img>
         </div>
         <div className={imgTwoClass} onClick={switchImg}>
-          <img src={imgTwo.img} alt={imgTwo.alt}></img>
+          <img src={imgTwo.img} alt={imgTwo.alt} loading="lazy"></img>
         </div>
       </div>
     </div>

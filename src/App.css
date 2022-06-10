@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #e57a44;
-  --secondary-color: #382831;
+  --secondary-color: #382831ce;
 }
 
 body {
@@ -39,12 +39,18 @@ h4 {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  color: var(--primary-color);
-  font-size: 6rem;
-  margin-bottom: 0;
+    font-family:"Raleway, HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+line-height: 1.6;
+font-weight: 300;
+letter-spacing: 5px;
+word-spacing: 0.1px;
+color: var(--primary-color);
+font-size: 6rem;
+margin-bottom: 0;
+
 }
+
 h2 {
   font-size: 1.9rem;
   font-weight: 300;
@@ -109,30 +115,5 @@ button:hover {
   }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  .about,
-  .projects,
-  .content,
-  .display,
-  .WorkHistory-wrapper {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
-}
+
+

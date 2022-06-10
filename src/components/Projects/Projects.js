@@ -8,7 +8,7 @@ import WORDLE_dark from '../../images/WORDLE_dark.png';
 import WORDLE_light from '../../images/WORDLE_light.png';
 import BS_game from '../../images/BS_game.png';
 import BS_place from '../../images/BS_place.png';
-import grouper_full from '../../images/grouper_full.png';
+import grouper_full from '../../images/grouper_full.jpg';
 import grouper_close from '../../images/grouper_close.png';
 
 const Projects = () => {
@@ -41,7 +41,8 @@ const Projects = () => {
           <ImageCarousel
             imgOne={{
               img: grouper_full,
-              alt: 'Full grouper app.'
+              alt: 'Full grouper app.',
+              loading: 'eager'
             }}
             imgTwo={{
               img: grouper_close,
@@ -74,7 +75,8 @@ const Projects = () => {
           <ImageCarousel
             imgOne={{
               img: WORDLE_dark,
-              alt: 'Wordle game in dark mode.'
+              alt: 'Wordle game in dark mode.',
+              loading: 'lazy'
             }}
             imgTwo={{
               img: WORDLE_light,
@@ -84,9 +86,11 @@ const Projects = () => {
         </div>
         <div className="project project_2">
           <div className="project_info">
-            <a href="https://github.com/rypmaloney/blog-cms" target="blank">
-              <h2>Blog API and CMS</h2>
-            </a>
+            <h2>
+              <a href="https://github.com/rypmaloney/blog-cms" target="blank">
+                Blog API and CMS
+              </a>
+            </h2>
             <p>
               The core of this project is an API to fetch and create blog posts. Part of a jamstack
               application made up of a CMS, the API, and a frontend to display posts.
@@ -106,7 +110,7 @@ const Projects = () => {
           </div>
 
           <ImageCarousel
-            imgOne={{ img: CMS_login, alt: 'Login screen for CMS' }}
+            imgOne={{ img: CMS_login, alt: 'Login screen for CMS', loading: 'lazy' }}
             imgTwo={{
               img: CMS_update,
               alt: 'Update post page for CMS'
@@ -145,7 +149,8 @@ const Projects = () => {
           <ImageCarousel
             imgOne={{
               img: PF_board,
-              alt: 'Private forum post board'
+              alt: 'Private forum post board',
+              loading: 'lazy'
             }}
             imgTwo={{ img: PF_post, alt: 'Individual post' }}
           />
@@ -163,7 +168,7 @@ const Projects = () => {
               functions before creating them.
             </p>
 
-            <p className="project-tools">Vanilla HTML, CSS, and JavaScript</p>
+            <p className="project-tools">Vanilla HTML, CSS, JavaScript and Webpack</p>
             <div className="project-btns">
               <a
                 href="https://htmlpreview.github.io/?https://github.com/rypmaloney/battleship/blob/d7692551195a415232b57179286f1f455607c69c/dist/index.html"
@@ -177,7 +182,7 @@ const Projects = () => {
           </div>
 
           <ImageCarousel
-            imgOne={{ img: BS_game, alt: 'Battleship game' }}
+            imgOne={{ img: BS_game, alt: 'Battleship game', loading: 'lazy' }}
             imgTwo={{ img: BS_place, alt: 'Placing ships' }}
           />
         </div>

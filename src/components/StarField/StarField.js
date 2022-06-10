@@ -11,6 +11,7 @@ const StarField = (props) => {
   useEffect(() => {
     let startingStarArray = createStarArray(100, 50);
     let startingGalaxyArray = createStarArray(150, 15);
+
     setStarArray(startingStarArray);
     setGalaxyArray(startingGalaxyArray);
   }, []);
@@ -38,7 +39,7 @@ const StarField = (props) => {
       let x = getRandomArbitrary(-50, 50);
       //magnitude is distance from center (vh)
       let y = getRandomArbitrary(-magnitude, magnitude);
-      let wh = getRandomArbitrary(1, 5);
+      let wh = getRandomArbitrary(1, 2);
       //Set intial with id
       starArray.push({ x: x, y: y, wh: wh, id: uniqid() });
     }
@@ -52,7 +53,7 @@ const StarField = (props) => {
       let x = getRandomArbitrary(-50, 50);
       //magnitude is distance from center (vh)
       let y = getRandomArbitrary(-magnitude, magnitude);
-      let wh = getRandomArbitrary(1, 5);
+      let wh = getRandomArbitrary(1, 4);
       //use id from original array, this ensures a transition instead of rerendering a fresh array
       newStarArray[i] = { x: x, y: y, wh: wh, id: array[i].id };
     }
@@ -73,8 +74,7 @@ const StarField = (props) => {
               cursor: `${star.wh}px`
             }}
             onClick={() => console.log(`star!`)}
-            key={star.id}
-          ></div>
+            key={star.id}></div>
         );
       })}
       {galaxyArray.map((star) => {
@@ -88,8 +88,7 @@ const StarField = (props) => {
               cursor: `${star.wh}px`
             }}
             onClick={() => console.log(`star!`)}
-            key={star.id}
-          ></div>
+            key={star.id}></div>
         );
       })}
     </div>
